@@ -140,6 +140,14 @@ footer hr.divider{
   margin-top: 3rem;
 }
 
+.horarios th, .horarios td{
+    font-family: 'Manrope', sans-serif;
+}
+
+.tarifas p{
+  font-family: 'kaftan_serif_-_trialregular', Arial, sans-serif;
+}
+
 @media (min-width: 992px) {
 
   footer hr.divider{
