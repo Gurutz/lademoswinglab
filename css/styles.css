@@ -147,7 +147,7 @@ header video{
   font-size: 2rem;
 }
 
-.lindy-hop, .solo-jazz{
+.lindy-hop, .solo-jazz, .equipo{
   border: 3px solid black;
 }
 
@@ -167,6 +167,7 @@ header video{
 
 .equipo p{
   font-size: 15px;
+  position: relative;
 }
 
 footer hr.divider{
