@@ -4252,7 +4252,7 @@ textarea.form-control-lg {
 }
 
 .navbar-toggler {
-  padding: 0.25rem 0.75rem;
+  /*padding: 0.25rem 0.75rem;*/
   font-size: 1.25rem;
   line-height: 1;
   background-color: transparent;
@@ -9748,6 +9748,10 @@ textarea.form-control-lg {
 
   .mx-lg-4 {
     margin-right: 1.5rem !important;
+    margin-left: 1.5rem !important;
+  }
+
+  .ml-lg-4{
     margin-left: 1.5rem !important;
   }
 
