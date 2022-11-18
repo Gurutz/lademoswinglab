@@ -175,6 +175,11 @@ footer hr.divider{
   margin:1rem 0rem;
 }
 
+.mail{
+  position: relative;
+  top: 5px;
+}
+
 .rrss{
   margin-right: 2rem;
   margin-top: 3rem;
