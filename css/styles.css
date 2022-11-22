@@ -78,10 +78,91 @@
 }
 
 /**PERSONAL**/
+.navbar{
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
 
-.navbar-nav .nav-item .nav-link, .btn, p{
+.nav-menu{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  gap:60px;
+}
+
+.nav-branding{
+  font-size: 2rem;
+}
+
+.nav-link{
+  transition: 0.7s ease;
+}
+
+.nav-link:hover{
+  color: #D4C5FF;
+}
+
+
+.hamburger{
+  display: none;
+  cursor:pointer;
+}
+
+.bar{
+  display: block;
+  width: 24px;
+  height: 0.1rem;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+.navbar, .nav-item, .nav-link, .btn, p{
   font-family: 'Manrope', sans-serif;
 
+}
+
+@media(max-width:990px){
+
+  .navbar.active{
+    background-color:#D4C5FF ;
+  }
+  .hamburger{
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(4px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(2){
+    transform: translateY(-3px) rotate(-45deg);
+  }
+  .nav-menu{
+    position:fixed;
+    left: -100%;
+    top:70px;
+    gap:0;
+    flex-direction: column;
+    background-color: #D4C4FF;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    z-index: 1;
+  }
+
+  .nav-item{
+    margin: 16px 0;
+  }
+
+  .nav-menu.active{
+    left:0;
+  }
 }
 
 header h1{
@@ -191,7 +272,7 @@ footer hr.divider{
 
 @media (max-width: 990px){
   #navbarResponsive{
-    vh: 150%;
+    justify-content: space-between;
   }
 
   #navbarResponsive ul li a{
@@ -11533,6 +11614,7 @@ hr.divider-light {
   background-color: #000000;
   transition: background-color 0.2s ease;
 }
+
 #mainNav .navbar-brand {
   font-family: 'Manrope', sans-serif;
   font-weight: 700;
