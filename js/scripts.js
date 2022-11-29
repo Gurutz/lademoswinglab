@@ -68,7 +68,7 @@ const navBarToggler = document.querySelector(".navbar-toggler");
 })
 
 
-document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", ()=>{
+document.querySelectorAll(".nav-item").forEach(n => n.addEventListener("click", ()=>{
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }))
