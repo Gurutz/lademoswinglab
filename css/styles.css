@@ -198,17 +198,44 @@ header video{
   background-color: #D4C5FF;
 }
 
-.horario .day{
-  font-size: 18px;
-  margin-bottom: 1rem;
+.horario .col-3{
+  margin: 1px;
+  padding: 4px 1px 1px 1px;
+}
+
+.horario .x::first-letter{
+  font-size: 0;
+}
+.horario .day, .horario .hour{
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .horario .class{
-  font-size: 15px;
+  font-size: 0.93rem;
 }
 
 .horario .teachers{
-  font-size: 12px;
+  font-size: 0.75rem;
+}
+
+.horario .col-3{
+  position: relative;
+}
+
+.horario .new{
+
+}
+
+.horario small{
+    position: absolute;
+    top: -5px;
+    left: 0px;
+    font-size: 0.35rem;
+    background: #D4C5FF;
+    padding: 0.1rem;
+    border-radius: 6px;
+    font-family: 'Manrope', sans-serif;
 }
 
 .horario p{
@@ -297,6 +324,26 @@ footer hr.divider{
 
   .horario h2{
     text-align: left;
+  }
+
+  .horario .day{
+    font-size: 0;
+  }
+
+  .horario .day::first-letter{
+    font-size: 1.12rem;
+  }
+
+  .horario .class{
+    font-size: 0.8rem;
+  }
+
+  .horario .class span{
+    font-size: 0.7rem;
+  }
+
+  .horario .teachers{
+    font-size: 0.6rem;
   }
 }
 
