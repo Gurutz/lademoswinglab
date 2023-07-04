@@ -209,6 +209,7 @@ header video{
 .horario .day, .horario .hour{
   font-size: 1rem;
   margin-bottom: 0.5rem;
+  margin-left: 0,5rem;
 }
 
 .horario .class{
@@ -219,17 +220,14 @@ header video{
   font-size: 0.75rem;
 }
 
-.horario .col-3{
+.horario .col{
   position: relative;
-}
-
-.horario .new{
-
+  min-width: 20%;
 }
 
 .horario small{
     position: absolute;
-    top: -5px;
+    top: -10px;
     left: 0px;
     font-size: 0.35rem;
     background: #D4C5FF;
@@ -241,6 +239,7 @@ header video{
 .horario p{
     font-family: 'Manrope', sans-serif;
     margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
 }
 
 .tarifas h2, .tarifas .precio{
@@ -334,16 +333,21 @@ footer hr.divider{
     font-size: 1.12rem;
   }
 
+  .horario .hour{
+    font-size: 0.9rem;
+
+  }
   .horario .class{
+    overflow: hidden;
     font-size: 0.8rem;
   }
 
   .horario .class span{
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
 
   .horario .teachers{
-    font-size: 0.6rem;
+    font-size: 0.5rem;
   }
 }
 
