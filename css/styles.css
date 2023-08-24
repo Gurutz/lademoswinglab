@@ -254,9 +254,9 @@ header video{
   font-size: 2rem;
 }
 
-.lindy-hop, .solo-jazz, .equipo{
+/*.lindy-hop, .solo-jazz, .equipo{
   border: 3px solid black;
-}
+}*/
 
 .lindy-hop h2, .solo-jazz h2{
   font-size: 4.2rem;
@@ -273,8 +273,12 @@ header video{
 }
 
 .equipo p{
-  font-size: 15px;
+  font-size: 13px;
   position: relative;
+}
+
+.equipo .small{
+  padding-bottom: 1rem;
 }
 
 footer hr.divider{
@@ -349,9 +353,18 @@ footer hr.divider{
   .horario .teachers{
     font-size: 0.5rem;
   }
+
+  .equipo .large {
+    display: none;
+  }
+
 }
 
 @media (min-width: 768px) {
+
+  .equipo .small {
+    display: none;
+  }
 
   footer hr.divider{
     height: 0;
