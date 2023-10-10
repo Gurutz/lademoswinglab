@@ -277,8 +277,8 @@ header video{
   position: relative;
 }
 
-.equipo .small{
-  padding-bottom: 1rem;
+.equipo .p-1{
+  padding: 0.90rem !important;
 }
 
 footer hr.divider{
@@ -356,6 +356,10 @@ footer hr.divider{
 
   .equipo .large {
     display: none;
+  }
+
+  .equipo .p-1{
+    padding: 0.25rem !important;
   }
 
 }
