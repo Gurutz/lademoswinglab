@@ -26,6 +26,8 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/stylesheet.css" rel="stylesheet" />
+        <link href="css/whatsapp.css" rel="stylesheet" />
+        <link href="css/banner_cookies.css" rel="stylesheet"/>
 
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-WN1PSY6X3K"></script>
@@ -55,6 +57,24 @@
         <!-- End Meta Pixel Code -->
     </head>
     <body id="page-top" class="bg-black">
+
+        <!-- Cookie Banner -->
+        <div id="cb-cookie-banner" class="alert alert-dark text-center mb-0" role="alert">
+        🍪 This website uses cookies to ensure you get the best experience on our website.
+        <a href="https://lademoswinglab.es/" target="blank">Learn more</a>
+        <button type="button" class="btn btn-primary btn-sm ms-3" onclick="window.cb_hideCookieBanner()">
+        I Got It
+        </button>
+        </div>
+        <!-- End of Cookie Banner -->
+
+
+
+
+        <a href="https://wa.me/+34660942608" target="_blank" class="whatsapp-button">
+            <i class="fa fa-whatsapp"></i>
+        </a>
+        
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top gx-4 gx-lg-5 px-4 px-lg-5 py-3 w-100" id="mainNav">
             <div class="container-fluid w-100">
@@ -76,7 +96,7 @@
                         <li class="nav-item"><a class="nav-link text-white" href="#footer">Contacto</a></li> 
                     </ul>
                     <form class="form-inline my-2 ml-lg-4 my-lg-0">
-                        <a class="btn btn-outline-white" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScEMDJpDFKXOiaWcx3LX5M6sjgQBfQyYAd6SUBohx62f8GDhQ/viewform">Apúntate</a>
+                        <a class="btn btn-outline-white" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfobciwRwRixQbc7MfYQEgq5MSWnvtTq2dASlTSUCqYvdU1Vw/viewform">Apúntate</a>
                     </form>
                 </div>
             </div>
@@ -109,335 +129,686 @@
                    <h1 class="col-7 text-white text-uppercase">Clases y horarios</h1> 
                 </div>
                 <div class="row d-flex">
-                    <div class="horario col-12 col-md-8 justify-content-center bg-white text-center text-black rounded py-5 px-4">
-                        <h2 class="text-uppercase mb-4">Horario</h2>
+                    <div class="text-center">
                         
-                        <div class="row text-start">
-                                <div class="d-flex flex-row">
-                                    <div class="day col"><p><strong>Lunes</strong></p></div>
-                                    <div class="day col"><p><strong>Martes</strong></p></div>
-                                    <div class="day col x"><p><strong>XMiércoles</strong></p></div>
-                                    <div class="day col"><p><strong>Jueves</strong></p></div>
-                                    <div class="day col"><p><strong>Viernes</strong></p></div>
-                                </div>
-                            <!-- 18:00 -->
-                            <div class="d-flex flex-row">
-                                <!-- Lunes 18:00 -->
-                                <div class="col new">
-                                    <p class="hour"><strong></strong></p>
-                                    <p class="class"><br><span></span></p>
-                                    <p class="teachers"></p>
-                                </div>
-                                <!-- Martes 18:00 -->
-                                <div class="col new">
-                                    <small></small>
-                                    <p class="hour"><strong></strong></p>
-                                    <p class="class"><br><span></span></p>
-                                    <p class="teachers"></p>
-                                </div>
-                                <!-- Miercoles 18:00 -->
-                                <div class="col">
-                                    <p class="hour"><strong></strong></p>
-                                    <p class="class"><br><span></span></p>
-                                    <p class="teachers"></p>
-                                </div>
-                                <!-- Jueves 18:00 -->
-                                <div class="col">
-                                    <small></small>
-                                    <a>
-                                    <p class="hour"><strong></strong></p>
-                                    <p class="class"><br><span></span></p>
-                                    <p class="teachers"></p>
-                                    </a>
-                                </div>
-                                <!-- Viernes 18:00 -->
-                                <div class="col new">
-                                    <p class="hour"><strong></strong></p>
-                                    <p class="class"><br><span></span></p>
-                                    <p class="teachers"></p>
-                                </div>
-                            </div> 
-                            <!-- 19:00 -->
-                                <div class="d-flex flex-row">
-                                    <!-- Lunes 19:00 -->
-                                    <div class="col">
-                                        <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScEMDJpDFKXOiaWcx3LX5M6sjgQBfQyYAd6SUBohx62f8GDhQ/viewform">
-                                        <p class="hour"><strong>19:00</strong></p>
-                                        <p class="class">Lindy Hop<br><span>Principiante 2</span></p>
-                                        <p class="teachers">Julie & Ross</p>
-                                    </a>
-                                    </div>
-                                    <!-- Martes 19:00 -->
-                                    
-                                    <div class="col">
-                                       
-                                        <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScEMDJpDFKXOiaWcx3LX5M6sjgQBfQyYAd6SUBohx62f8GDhQ/viewform">
-                                        <p class="hour"><strong>19:00</strong></p>
-                                        <p class="class">Lindy Hop<br><span>Principiante 2</span></p>
-                                        <p class="teachers">Aiala & Ross</p>
-                                    </a>
-                                    <hr class="divider bg-black opacity-25"/>
-                                    </div>
-                                    <!-- Miercoles 19:00 -->
-                                    <div class="col">
-                                        <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScEMDJpDFKXOiaWcx3LX5M6sjgQBfQyYAd6SUBohx62f8GDhQ/viewform">
-                                        <p class="hour"><strong>19:00</strong></p>
-                                        <p class="class">Lindy Hop<br><span>Interm-Avanzado</span></p>
-                                        <p class="teachers">Aiala & Gurutz</p>
+                        <div class="horario">
+                            <table class="table-desktop rounded" cellspacing="0">
+                                <thead>
+                                    <tr> 
+                                        <th class="day col-1 bg-soft-purple top-left-rounded" scope="col"></th>
+                                        <th class="day col-2 bg-white" scope="col">Lunes</th>
+                                        <th class="day col-2 bg-white" scope="col">Martes</th>
+                                        <th class="day col-2 bg-white" scope="col">Miercoles</th>
+                                        <th class="day col-2 bg-white" scope="col">Jueves</th>
+                                        <th class="day col-2 bg-white top-rigth-rounded" scope="col">Viernes</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- HORARIO 18:00-->
+                                    <tr>
+                                      <th class="main-time bg-soft-purple" scope="row"><p class="vertical">18:00</p></th>
+                                      <td class="bg-light-purple"></td>
+                                      <td class="bg-light-purple"></td>
+                                      <td class="bg-light-purple"></td>
+                                      <td class="bg-light-purple"></td>
+                                      <td class="bg-light-purple">
+                                        <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                            <div class="class">
+                                                <p class="class-time">18:00-19:00</p>
+                                                <p class="class-name">Solo Jazz</p>
+                                                <p class="class-level">Iniciacion(desde 0)</p>
+                                                <p class="class-teacher">Julie</p>
+                                            </div>  
                                         </a>
-                                    </div>
-                                    <!-- Jueves 19:00 -->
-                                    <div class="col">
-                                        <small>NUEVO GRUPO</small>
-                                        <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScEMDJpDFKXOiaWcx3LX5M6sjgQBfQyYAd6SUBohx62f8GDhQ/viewform">
-                                        <p class="hour"><strong>19:00</strong></p>
-                                        <p class="class">Solo Jazz<br><span>Iniciación +</span></p>
-                                        <p class="teachers">Julie</p>
-                                        </a> 
-                                    </div>
-                                    <!-- Viernes 19:00 -->
-                                    <div class="col">
-                                        <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScEMDJpDFKXOiaWcx3LX5M6sjgQBfQyYAd6SUBohx62f8GDhQ/viewform">
-                                        <p class="hour"><strong>19:00</strong></p>
-                                        <p class="class">Solo Jazz<br><span>Principiante</span></p>
-                                        <p class="teachers">Aiala</p>
-                                        </a> 
-                                    </div>
-                                </div>
- 
-                            <!-- 19:00 EXTRA-->  
-                                <div class="d-flex flex-row">
-                                    <!-- Lunes 19:00 -->
-                                    <div class="col new">
-                                        <p class="hour"></p>
-                                        <p class="class"><span></span></p>
-                                        <p class="teachers"></p>
-                                    </div>
-                                    <!-- Martes 19:00 -->
-                                    
-                                    <div class="col new">
-                                        <small>NUEVO GRUPO</small>
-                                        <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScEMDJpDFKXOiaWcx3LX5M6sjgQBfQyYAd6SUBohx62f8GDhQ/viewform">
-                                        <p class="hour">19:00</p>
-                                        <p class="class">Solo Jazz<br><span>Interm-Avanzado</span></p>
-                                        <p class="teachers">Gurutz</p>
-                                        </a>
+                                      </td>
+                                    </tr>
+
+                                    <!-- HORARIO 19:00-->
+                                    <tr>                                    
+                                        <th class="main-time bg-soft-purple" scope="column"><p class="vertical">19:00</p></th>
+                                        <!-- Lunes 19:00-->
+                                        <td class="bg-white">
+                                            <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                                <div class="class">
+                                                    <p class="class-time">19:00-20:00</p>
+                                                    <p class="class-name">Lindy Hop</p>
+                                                    <p class="class-level">Principiantes 3</p>
+                                                    <p class="class-teacher">Julie & Ross</p>
+                                                </div>  
+                                            </a>
+                                        </td>   
+                                        <td class="bg-white">
+                                            <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                                <div class="class">
+                                                    <p class="class-time">19:00-20:00</p>
+                                                    <p class="class-name">Lindy Hop</p>
+                                                    <p class="class-level">Iniciacion(desde 0)</p>
+                                                    <p class="class-teacher">Aiala & Ross</p>
+                                                </div>  
+                                            </a>                                         
+                                        </td>
+                                        <td class="bg-white">
+                                            <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                                <div class="class">
+                                                    <p class="class-time">19:00-20:00</p>
+                                                    <p class="class-name">Lindy Hop</p>
+                                                    <p class="class-level">Intermedio +</p>
+                                                    <p class="class-teacher">Aiala & Gurutz</p>
+                                                </div>  
+                                            </a>
+                                        </td>
+                                        <td class="bg-white">
+                                            <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                                <div class="class">
+                                                    <p class="class-time">19:00-20:00</p>
+                                                    <p class="class-name">Solo Jazz</p>
+                                                    <p class="class-level">Iniciacion(desde 0)</p>
+                                                    <p class="class-teacher">Julie</p>
+                                                </div>  
+                                            </a>
+                                        </td>
+                                        <td class="bg-white">
+                                            <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                                <div class="class">
+                                                    <p class="class-time">19:00-20:00</p>
+                                                    <p class="class-name">Solo Jazz</p>
+                                                    <p class="class-level">Principiantes 2</p>
+                                                    <p class="class-teacher">Julie</p>
+                                                </div>  
+                                            </a>
+                                        </td>
+                                    </tr>
+
+
+                                    <!-- HORARIO 19:00 2nd-->
+                                        <!-- Lunes 19:00 -->
+                                        <tr>
+                                            <th class="main-time bg-soft-purple" scope="row"><p class="vertical">19:00</p></th>
+                                            <td class="bg-light-purple">
+                                                <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                                    <div class="class">
+                                                        <p class="class-time">19:00-20:00</p>
+                                                        <p class="class-name">Solo Jazz</p>
+                                                        <p class="class-level">Iniciacion(desde 0)</p>
+                                                        <p class="class-teacher">Aiala</p>
+                                                    </div>  
+                                                </a>
+                                            </td>   
+                                            <td class="bg-light-purple">
+                                                <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                                    <div class="class">
+                                                        <p class="class-time">19:00-20:00</p>
+                                                        <p class="class-name">Solo Jazz</p>
+                                                        <p class="class-level">Intermedio/Avanzado</p>
+                                                        <p class="class-teacher">Gurutz</p>
+                                                    </div>  
+                                                </a>                                        
+                                            </td>
+                                            <td class="bg-light-purple">
+                                                <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                                    <div class="class">
+                                                        <p class="class-time">19:00-20:00</p>
+                                                        <p class="class-name">Lindy Hop</p>
+                                                        <p class="class-level">Iniciacion(desde 0)</p>
+                                                        <p class="class-teacher"></p>
+                                                    </div>  
+                                                </a>
+                                            </td>
+                                            <td class="bg-light-purple">
+                                                <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                                    <div class="class">
+                                                        <p class="class-time">19:00-20:00</p>
+                                                        <p class="class-name">Lindy Hop</p>
+                                                        <p class="class-level">Avanzado</p>
+                                                        <p class="class-teacher">Aiala & Gurutz</p>
+                                                    </div>  
+                                                </a>
+                                            </td>
+                                            <td class="bg-light-purple">
+                                                <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                                    <div class="class">
+                                                        <p class="class-time"></p>
+                                                        <p class="class-name"></p>
+                                                        <p class="class-level"></p>
+                                                        <p class="class-teacher"></p>
+                                                    </div>  
+                                                </a>
+                                            </td>
+                                        </tr>
+
+
+
+                                    <!-- HORARIO 20:00 1st-->
+                                        <!-- Lunes 20:00 -->
+                                        <tr>
+                                            <th class="main-time bg-soft-purple" scope="row"><p class="vertical">20:00</p></th>
+                                            <td class="bg-white">
+                                                <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                                    <div class="class">
+                                                        <p class="class-time">20:00-21:00</p>
+                                                        <p class="class-name">Lindy Hop</p>
+                                                        <p class="class-level">Intermedio</p>
+                                                        <p class="class-teacher">Ross & Gurutz</p>
+                                                    </div>  
+                                                </a>
+                                            </td>   
+                                            <td class="bg-white">
+                                                <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                                    <div class="class">
+                                                        <p class="class-time">20:00-21:00</p>
+                                                        <p class="class-name">Lindy Hop</p>
+                                                        <p class="class-level">Avanzado +</p>
+                                                        <p class="class-teacher">Aiala & Gurutz</p>
+                                                    </div>  
+                                                </a>                                       
+                                            </td>
+                                            <td class="bg-white">
+                                                <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                                    <div class="class">
+                                                        <p class="class-time">20:00-21:00</p>
+                                                        <p class="class-name">Lindy Hop</p>
+                                                        <p class="class-level">Intermedio</p>
+                                                        <p class="class-teacher">Aiala & Gurutz</p>
+                                                    </div>  
+                                                </a>
+                                            </td>
+                                            <td class="bg-white">
+                                                <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                                    <div class="class">
+                                                        <p class="class-time">20:00-21:00</p>
+                                                        <p class="class-name">Lindy Hop</p>
+                                                        <p class="class-level">Principiantes 1</p>
+                                                        <p class="class-teacher">Ross & Julie</p>
+                                                    </div>  
+                                                </a>
+                                            </td>
+                                            <td class="bg-white">
+                                                <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                                    <div class="class">
+                                                        <p class="class-time">20:00-21:00</p>
+                                                        <p class="class-name">Lindy Hop</p>
+                                                        <p class="class-level">Iniciacion(desde 0)</p>
+                                                        <p class="class-teacher"></p>
+                                                    </div>  
+                                                </a>
+                                            </td>
+                                        </tr>
+
+
+                                    <!-- HORARIO 20:00 2nd-->
+                                        <!-- Lunes 20:00 -->
+                                        <tr>
+                                            <th class="main-time bg-soft-purple" scope="row"><p class="vertical">20:00</p></th>
+                                            <td class="bg-light-purple">
+                                                <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                                    <div class="class">
+                                                        <p class="class-time">20:00-21:00</p>
+                                                        <p class="class-name">Lindy Hop</p>
+                                                        <p class="class-level">Iniciacion(desde 0)</p>
+                                                        <p class="class-teacher">Aiala & Julie</p>
+                                                    </div>  
+                                                </a>
+                                            </td>   
+                                            <td class="bg-light-purple">
+                                                <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                                    <div class="class">
+                                                        <p class="class-time"></p>
+                                                        <p class="class-name"></p>
+                                                        <p class="class-level"></p>
+                                                        <p class="class-teacher"></p>
+                                                    </div>  
+                                                </a>                                       
+                                            </td>
+                                            <td class="bg-light-purple">
+                                                <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                                    <div class="class">
+                                                        <p class="class-time">20:00-21:00</p>
+                                                        <p class="class-name">Solo Jazz</p>
+                                                        <p class="class-level">Intermedio</p>
+                                                        <p class="class-teacher">Ross</p>
+                                                    </div>  
+                                                </a>
+                                            </td>
+                                            <td class="bg-light-purple">
+                                                <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                                    <div class="class">
+                                                        <p class="class-time">20:00-21:00</p>
+                                                        <p class="class-name">Lindy Hop</p>
+                                                        <p class="class-level">Iniciacion(desde 0)</p>
+                                                        <p class="class-teacher">Aiala & Gurutz</p>
+                                                    </div>  
+                                                </a>
+                                            </td>
+                                            <td class="bg-light-purple">
+                                                <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                                    <div class="class">
+                                                        <p class="class-time"></p>
+                                                        <p class="class-name"></p>
+                                                        <p class="class-level"></p>
+                                                        <p class="class-teacher"></p>
+                                                    </div>  
+                                                </a>
+                                            </td>
+                                        </tr>   
+
+                                    <!-- HORARIO 21:00 1st-->
+                                        <!-- Lunes 21:00 -->
+                                        <tr>
+                                            <th class=" main-time bg-soft-purple" scope="row"><p class="vertical">21:00</p></th>
+                                            <td class="bg-white">
+                                                <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                                    <div class="class">
+                                                        <p class="class-time">21:00-22:00</p>
+                                                        <p class="class-name">Lindy Hop</p>
+                                                        <p class="class-level">Principiantes 2</p>
+                                                        <p class="class-teacher">Julie & Gurutz</p>
+                                                    </div>  
+                                                </a>
+                                            </td>   
+                                            <td class="bg-white"> 
+                                                <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                                    <div class="class">
+                                                        <p class="class-time">21:00-22:00</p>
+                                                        <p class="class-name">Lindy Hop</p>
+                                                        <p class="class-level">Avanzado</p>
+                                                        <p class="class-teacher">Aiala & Gurutz</p>
+                                                    </div>  
+                                                </a>                                          
+                                            </td>
+                                            <td class="bg-white">
+                                                <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                                    <div class="class">
+                                                        <p class="class-time">21:00-22:00</p>
+                                                        <p class="class-name">Lindy Hop</p>
+                                                        <p class="class-level">Iniciacion(desde 0)</p>
+                                                        <p class="class-teacher"></p>
+                                                    </div>  
+                                                </a>
+                                            </td>
+                                            <td class="bg-white">
+                                                <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                                    <div class="class">
+                                                        <p class="class-time">21:00-22:00</p>
+                                                        <p class="class-name">Lindy Hop</p>
+                                                        <p class="class-level">Principiantes 3</p>
+                                                        <p class="class-teacher">Aiala & Julie</p>
+                                                    </div>  
+                                                </a>
+                                            </td>
+                                            <td class="bg-white">
+                                                <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                                    <div class="class">
+                                                        <p class="class-time"></p>
+                                                        <p class="class-name"></p>
+                                                        <p class="class-level"></p>
+                                                        <p class="class-teacher"></p>
+                                                    </div>  
+                                                </a>
+                                            </td>
+                                        </tr>   
+                                      
                                         
-                                    </div>
-                                    <!-- Miercoles 19:00 -->
-                                    <div class="col">
-                                        <p class="hour"></p>
-                                        <p class="class"></p>
-                                        <p class="teachers"></p>
-                                    </div>
-                                    <!-- Jueves 19:00 -->
-                                    <div class="col">
-                                        <small></small>
-                                        <a>
-                                        <p class="hour"><strong></strong></p>
-                                        <p class="class"><br><span></span></p>
-                                        <p class="teachers"></p>
-                                        </a> 
-                                    </div>
-                                    <!-- Viernes 19:00 -->
-                                    <div class="col new">
-                                        <p class="hour"></p>
-                                        <p class="class"></p>
-                                        <p class="teachers"></p>
-                                    </div>
-                                </div>
-
-                            <!-- 20:00 -->  
-                                <hr class="divider bg-black opacity-25"/>
-                                <div class="d-flex flex-row">
-                                    <!-- Lunes 20:00 -->
-                                    <div class="col">
-                                        <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScEMDJpDFKXOiaWcx3LX5M6sjgQBfQyYAd6SUBohx62f8GDhQ/viewform">
-                                        <p class="hour"><strong>20:00</strong></p>
-                                        <p class="class">Lindy Hop<br><span>Princip-Interm</span></p>
-                                        <p class="teachers">Julie & Gurutz</p>
-                                    </a>
-                                    </div>
-                                    <!-- Martes 20:00 -->
-                                    <div class="col">
-                                        <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScEMDJpDFKXOiaWcx3LX5M6sjgQBfQyYAd6SUBohx62f8GDhQ/viewform">
-                                        <p class="hour"><strong>20:00</strong></p>
-                                        <p class="class">Lindy Hop<br><span>Avanzado+</span></p>
-                                        <p class="teachers">Aiala & Gurutz</p>
-                                    </a>              
-                                    </div>
-                                    <!-- Miercoles 20:00 -->                                  
-                                    <div class="col">
-                                        <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScEMDJpDFKXOiaWcx3LX5M6sjgQBfQyYAd6SUBohx62f8GDhQ/viewform">
-                                            <p class="hour"><strong>20:00</strong></p>
-                                            <p class="class">Lindy Hop<br><span>Principiante 3</span></p>
-                                            <p class="teachers">Aiala & Gurutz</p>
-                                        </a>
-                                        <hr class="divider bg-black opacity-25"/>
-                                    </div>
-                                    <!-- Jueves 20:00 -->                                  
-                                    <div class="col">
-                                        <small>NUEVO GRUPO</small>
-                                        <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScEMDJpDFKXOiaWcx3LX5M6sjgQBfQyYAd6SUBohx62f8GDhQ/viewform">
-                                        <p class="hour"><strong>20:00</strong></p>
-                                        <p class="class">Lindy Hop<br><span>Iniciación</span></p>
-                                        <p class="teachers">Julie & Ross</p>
-                                        </a>
-                                    </div> 
-                                    <!-- Viernes 20:00 -->
-                                    <div class="col new">
-                                        
-                                        <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScEMDJpDFKXOiaWcx3LX5M6sjgQBfQyYAd6SUBohx62f8GDhQ/viewform">
-                                            <p class="hour"><strong>20:00</strong></p>
-                                            <p class="class">Lindy Hop<br><span>Principiante 1</span></p>
-                                            <p class="teachers">Aiala & Gurutz & Ross</p>
-                                            </a> 
-                                    </div>
-                                </div>
-
-                            <!-- 20:00 extra -->     
-                                <div class="d-flex flex-row">
-                                    <!-- Lunes 20:00 -->
-                                    <div class="col">
-                                        <a>
-                                        <p class="hour"></p>
-                                        <p class="class"></p>
-                                        <p class="teachers"></p>
-                                    </a>
-                                    </div>
-                                    <!-- Martes 20:00 -->
-                                    <div class="col">
-                                        <p class="hour"></p>
-                                        <p class="class"></p>
-                                        <p class="teachers"></p>
-                                    </a>
-                                    </div>
-                                    <!-- Miercoles 20:00 -->
-                                    <div class="col">
-                                        <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScEMDJpDFKXOiaWcx3LX5M6sjgQBfQyYAd6SUBohx62f8GDhQ/viewform">
-                                        <p class="hour"><strong>20:00</strong></p>
-                                        <p class="class">Solo Jazz<br><span>Intermedio</span></p>
-                                        <p class="teachers">Ross</p>
-                                        </a>
-                                    </div>
-                                    <!-- Jueves 20:00 -->
-                                    <div class="col">
-                                        <p class="hour"></p>
-                                        <p class="class"></p>
-                                        <p class="teachers"></p>
-                                    </div>
-                                    <!-- Viernes 20:00 -->
-                                    <div class="col new">
-                                        <p class="hour"></p>
-                                        <p class="class"></p>
-                                        <p class="teachers"></p>
-                                    </div>
-                                </div>
+                                    <!-- HORARIO 21:00 2nd-->
+                                        <!-- Lunes 21:00 -->
+                                        <tr>
+                                            <th class="main-time bg-soft-purple bottom-left-rounded" scope="row"><p class="vertical">21:00</p></th>
+                                            <td class="bg-light-purple">
+                                                <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                                    <div class="class">
+                                                        <p class="class-time">21:00-22:00</p>
+                                                        <p class="class-name">Solo Jazz</p>
+                                                        <p class="class-level">Principiantes 1</p>
+                                                        <p class="class-teacher">Ross</p>
+                                                    </div>  
+                                                </a>
+                                            </td>   
+                                            <td class="bg-light-purple">
+                                                <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                                    <div class="class">
+                                                        <p class="class-time"></p>
+                                                        <p class="class-name"></p>
+                                                        <p class="class-level"></p>
+                                                        <p class="class-teacher"></p>
+                                                    </div>  
+                                                </a>                                        
+                                            </td>
+                                            <td class="bg-light-purple">
+                                                <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                                    <div class="class">
+                                                        <p class="class-time">21:00-22:00</p>
+                                                        <p class="class-name">Lindy Hop</p>
+                                                        <p class="class-level">Intermedio +</p>
+                                                        <p class="class-teacher">Ross & Gurutz</p>
+                                                    </div>  
+                                                </a>
+                                            </td>
+                                            <td class="bg-light-purple">
+                                                <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                                    <div class="class">
+                                                        <p class="class-time"></p>
+                                                        <p class="class-name"></p>
+                                                        <p class="class-level"></p>
+                                                        <p class="class-teacher"></p>
+                                                    </div>  
+                                                </a>
+                                            </td>
+                                            <td class="bg-light-purple bottom-rigth-rounded">
+                                                <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                                    <div class="class">
+                                                        <p class="class-time"></p>
+                                                        <p class="class-name"></p>
+                                                        <p class="class-level"></p>
+                                                        <p class="class-teacher"></p>
+                                                    </div>  
+                                                </a>
+                                            </td>
+                                        </tr>                                          
 
 
-                            <!-- 21:00 -->    
-                                <hr class="divider bg-black opacity-25"/>
-                                <div div class="d-flex flex-row">
-                                    <!-- Lunes 21:00 -->
-                                    <div class="col new">
-                                        
-                                        <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScEMDJpDFKXOiaWcx3LX5M6sjgQBfQyYAd6SUBohx62f8GDhQ/viewform">
-                                        <p class="hour"><strong>21:00</strong></p>
-                                        <p class="class">Lindy Hop<br><span>Principiante 1</span></p>
-                                        <p class="teachers">Julie & Gurutz</p>
-                                    </a>
-                                    <hr class="divider bg-black opacity-25"/>
-                                    </div>
-                                    <!-- Martes 21:00 -->
-                                    <div class="col">
-                                        <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScEMDJpDFKXOiaWcx3LX5M6sjgQBfQyYAd6SUBohx62f8GDhQ/viewform">
-                                        <p class="hour"><strong>21:00</strong></p>
-                                        <p class="class">Lindy Hop<br><span>Avanzado</span></p>
-                                        <p class="teachers">Aiala & Gurutz</p>
-                                    </a>
-                                    </div>
-                                     <!-- Miercoles 21:00 -->
-                                    <div class="col">
-                                        <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScEMDJpDFKXOiaWcx3LX5M6sjgQBfQyYAd6SUBohx62f8GDhQ/viewform">
-                                        <p class="hour"><strong>21:00</strong></p>
-                                        <p class="class">Lindy Hop<br><span>Interm-Avanzado</span></p>
-                                        <p class="teachers">Ross & Gurutz</p>
-                                    </a>
-                                    </div>
-                                     <!-- Jueves 21:00 -->
-                                     <div class="col">
-                                        <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScEMDJpDFKXOiaWcx3LX5M6sjgQBfQyYAd6SUBohx62f8GDhQ/viewform">
-                                        <p class="hour"><strong>21:00</strong></p>
-                                        <p class="class">Lindy Hop<br><span>Principiante 2</span></p>
-                                        <p class="teachers">Julie & Ross</p>
+                                  </tbody>
+                            </table>
+                            <!--LUNES-->
+                            <div class="table-responsive rounded">  
+                                    <div class="day bg-white">Lunes</div>
+                                    <a class="bg-white" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                        <div class="class">
+                                            <p class="class-time"></p>
+                                            <p class="class-name"></p>
+                                            <p class="class-level"></p>
+                                            <p class="class-teacher"></p>
+                                        </div>  
                                     </a>
 
-                                    </div>
-                                    <!-- Viernes 21:00 -->
-                                    <div class="col">
-                                        <a>
-                                        <p class="hour"><strong></strong></p>
-                                        <p class="class"></span></p>
-                                        <p class="teachers"></p>
+                                    <a class="bg-white" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                        <div class="class">
+                                            <p class="class-time">19:00-20:00</p>
+                                            <p class="class-name">Lindy Hop</p>
+                                            <p class="class-level">Principiantes 2</p>
+                                            <p class="class-teacher">Julie & Ross</p>
+                                        </div>  
                                     </a>
-                                    </div>
-                                </div>
 
-                            <!-- 21:00 extra -->     
-                            
-                                <div div class="d-flex flex-row">
-                                    <!-- Lunes 21:00 -->
-                                    
-                                    <div class="col new">
-                                        <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScEMDJpDFKXOiaWcx3LX5M6sjgQBfQyYAd6SUBohx62f8GDhQ/viewform">
-                                        <small>NUEVO GRUPO</small>
-                                        <p class="hour">21:00</p>
-                                        <p class="class">Solo Jazz<br><span>Iniciación</span></p>
-                                        <p class="teachers">Rossana</p>    
-                                        </a>
-                                        
-                                    </div>
-                                    <!-- Martes 21:00 -->
-                                    <div class="col">
-                                            <p class="hour"><strong></strong></p>
-                                            <p class="class"><br><span></span></p>
-                                            <p class="teachers"></p>
-                                    </div>
-                                    <!-- Miercoles 21:00 -->
-                                    <div class="col">
-                                        <p class="hour"></p>
-                                        <p class="class"></p>
-                                        <p class="teachers"></p>
-                                    </div>
-                                    <!-- Jueves 21:00 -->
-                                    <div class="col new">
-                                        <p class="hour"><strong></strong></p>
-                                        <p class="class"><br><span></span></p>
-                                        <p class="teachers"></p>
-                                    </div> 
-                                    <!-- Viernes 21:00 -->
-                                    <div class="col">
-                                        <p class="hour"></p>
-                                        <p class="class"></p>
-                                        <p class="teachers"></p>
-                                    </div>
-                                </div>
+                                    <a class="bg-light-purple" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                        <div class="class">
+                                            <p class="class-time">19:00-20:00</p>
+                                            <p class="class-name">Solo Jazz</p>
+                                            <p class="class-level">Iniciacion(desde 0)</p>
+                                            <p class="class-teacher">Aiala</p>
+                                        </div>  
+                                    </a>
+
+                                    <a class="bg-white" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                        <div class="class">
+                                            <p class="class-time">20:00-21:00</p>
+                                            <p class="class-name">Lindy Hop</p>
+                                            <p class="class-level">Intermedio</p>
+                                            <p class="class-teacher">Ross & Gurutz</p>
+                                        </div>  
+                                    </a>
+
+                                    <a class="bg-light-purple" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                        <div class="class">
+                                            <p class="class-time">20:00-21:00</p>
+                                            <p class="class-name">Lindy Hop</p>
+                                            <p class="class-level">Iniciacion(desde 0)</p>
+                                            <p class="class-teacher">Aiala & Julie</p>
+                                        </div>  
+                                    </a>
+
+                                    <a class="bg-white" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                        <div class="class">
+                                            <p class="class-time">21:00-22:00</p>
+                                            <p class="class-name">Lindy Hop</p>
+                                            <p class="class-level">Principiantes 1</p>
+                                            <p class="class-teacher">Julie & Gurutz</p>
+                                        </div>  
+                                    </a>
 
 
+                                    <a class="bg-light-purple" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                        <div class="class">
+                                            <p class="class-time">21:00-22:00</p>
+                                            <p class="class-name">Solo Jazz</p>
+                                            <p class="class-level">Principiantes 1</p>
+                                            <p class="class-teacher">Ross</p>
+                                        </div>  
+                                    </a>
+                            </div>
+
+                        <!--MARTES-->
+                        <div class="table-responsive rounded">  
+                            <div class="day bg-white">Martes</div>
+                            <a class="bg-white" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                <div class="class">
+                                    <p class="class-time"></p>
+                                    <p class="class-name"></p>
+                                    <p class="class-level"></p>
+                                    <p class="class-teacher"></p>
+                                </div>  
+                            </a>
+
+                            <a class="bg-white" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                <div class="class">
+                                    <p class="class-time">19:00-20:00</p>
+                                    <p class="class-name">Lindy Hop</p>
+                                    <p class="class-level">Iniciacion(desde 0)</p>
+                                    <p class="class-teacher">Aiala & Ross</p>
+                                </div>  
+                            </a>
+
+                            <a class="bg-light-purple" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                <div class="class">
+                                    <p class="class-time">19:00-20:00</p>
+                                    <p class="class-name">Solo Jazz</p>
+                                    <p class="class-level">Intermedio/Avanzado</p>
+                                    <p class="class-teacher">Gurutz</p>
+                                </div>  
+                            </a>   
+
+                            <a class="bg-white" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                <div class="class">
+                                    <p class="class-time">20:00-21:00</p>
+                                    <p class="class-name">Lindy Hop</p>
+                                    <p class="class-level">Avanzado +</p>
+                                    <p class="class-teacher">Aiala & Gurutz</p>
+                                </div>  
+                            </a> 
+
+                            <a class="bg-light-purple" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                <div class="class">
+                                    <p class="class-time">21:00-22:00</p>
+                                    <p class="class-name">Lindy Hop</p>
+                                    <p class="class-level">Avanzado</p>
+                                    <p class="class-teacher">Aiala & Gurutz</p>
+                                </div>  
+                            </a> 
+                        </div>
+
+                        <!--MIERCOLES-->
+                        <div class="table-responsive rounded">  
+                            <div class="day bg-white">Miercoles</div>
+                            <a class="bg-white" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                <div class="class">
+                                    <p class="class-time"></p>
+                                    <p class="class-name"></p>
+                                    <p class="class-level"></p>
+                                    <p class="class-teacher"></p>
+                                </div>  
+                            </a>
+
+                            <a class="bg-white" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                <div class="class">
+                                    <p class="class-time">19:00-20:00</p>
+                                    <p class="class-name">Lindy Hop</p>
+                                    <p class="class-level">Intermedio +</p>
+                                    <p class="class-teacher">Aiala & Gurutz</p>
+                                </div>  
+                            </a>
+
+                            <a class="bg-light-purple" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                <div class="class">
+                                    <p class="class-time">19:00-20:00</p>
+                                    <p class="class-name">Lindy Hop</p>
+                                    <p class="class-level">Iniciacion (Desde 0)</p>
+                                    <p class="class-teacher"></p>
+                                </div>  
+                            </a>   
+
+                            <a class="bg-white" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                <div class="class">
+                                    <p class="class-time">20:00-21:00</p>
+                                    <p class="class-name">Lindy Hop</p>
+                                    <p class="class-level">Principiantes 3</p>
+                                    <p class="class-teacher">Aiala & Gurutz</p>
+                                </div>  
+                            </a> 
+
+                            <a class="bg-light-purple" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                <div class="class">
+                                    <p class="class-time">20:00-21:00</p>
+                                    <p class="class-name">Solo Jazz</p>
+                                    <p class="class-level">Intermedio</p>
+                                    <p class="class-teacher">Ross</p>
+                                </div>  
+                            </a> 
+
+                            <a class="bg-white" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                <div class="class">
+                                    <p class="class-time">21:00-22:00</p>
+                                    <p class="class-name">Lindy Hop</p>
+                                    <p class="class-level">Iniciacion (Desde 0)</p>
+                                    <p class="class-teacher"></p>
+                                </div>  
+                            </a> 
+
+                            <a class="bg-light-purple" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                <div class="class">
+                                    <p class="class-time">21:00-22:00</p>
+                                    <p class="class-name">Lindy Hop</p>
+                                    <p class="class-level">Intermedio +</p>
+                                    <p class="class-teacher">Ross & Gurutz</p>
+                                </div>  
+                            </a> 
+                        </div>
+
+
+                        <!--JUEVES-->
+                        <div class="table-responsive rounded">  
+                            <div class="day bg-white">Jueves</div>
+                            <a class="bg-white" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                <div class="class">
+                                    <p class="class-time">19:00-20:00</p>
+                                    <p class="class-name">Lindy Hop</p>
+                                    <p class="class-level">Avanzado</p>
+                                    <p class="class-teacher">Aiala & Gurutz</p>
+                                </div>  
+                            </a>
+
+                            <a class="bg-light-purple" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                <div class="class">
+                                    <p class="class-time">19:00-20:00</p>
+                                    <p class="class-name">Solo Jazz</p>
+                                    <p class="class-level">Iniciacion (Desde 0)</p>
+                                    <p class="class-teacher">Julie</p>
+                                </div>  
+                            </a>
+
+                            <a class="bg-white" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                <div class="class">
+                                    <p class="class-time">20:00-21:00</p>
+                                    <p class="class-name">Lindy Hop</p>
+                                    <p class="class-level">Principiantes 1</p>
+                                    <p class="class-teacher">Ross & Julie</p>
+                                </div>  
+                            </a>   
+
+                            <a class="bg-light-purple" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                <div class="class">
+                                    <p class="class-time">20:00-21:00</p>
+                                    <p class="class-name">Lindy Hop</p>
+                                    <p class="class-level">Iniciación (Desde 0)</p>
+                                    <p class="class-teacher"></p>
+                                </div>  
+                            </a> 
+
+                            <a class="bg-white" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                <div class="class">
+                                    <p class="class-time">21:00-22:00</p>
+                                    <p class="class-name">Lindy Hop</p>
+                                    <p class="class-level">Principiantes 2</p>
+                                    <p class="class-teacher">Aiala & Julie</p>
+                                </div>  
+                            </a> 
+                        </div>
+
+
+                        <!--VIERNES-->
+                        <div class="table-responsive rounded">  
+                            <div class="day bg-white">Viernes</div>
+                            <a class="bg-white" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                <div class="class">
+                                    <p class="class-time">18:00-19:00</p>
+                                    <p class="class-name">Solo Jazz</p>
+                                    <p class="class-level">Iniciacion (Desde 0)</p>
+                                    <p class="class-teacher">Julie</p>
+                                </div>  
+                            </a>
+
+                            <a class="bg-light-purple" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                <div class="class">
+                                    <p class="class-time">19:00-20:00</p>
+                                    <p class="class-name">Solo Jazz</p>
+                                    <p class="class-level">Principiantes 2</p>
+                                    <p class="class-teacher">Julie</p>
+                                </div>  
+                            </a>
+
+                            <a class="bg-white" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                <div class="class">
+                                    <p class="class-time">20:00-21:00</p>
+                                    <p class="class-name">Lindy Hop</p>
+                                    <p class="class-level">Iniciacion (Desde 0)</p>
+                                    <p class="class-teacher">Aiala & Julie</p>
+                                </div>  
+                            </a>   
                         </div>
                     </div>
-                        <div class="tarifas col-12 col-md-4 bg-purple text-center text-black rounded py-5 px-4">
-                            <h2 class="text-uppercase mb-4">Tarifas</h2>
-                            <p>1 actividad/semana</p>
-                            <p class="precio">50€/mes<br>145€/trimestre</p>
+
+                    <!-- TARIFAS-desktop-->
+                    </div>
+                        <div class="tarifas col-12 bg-purple text-center text-black rounded py-5 px-4">
+                            <h2 class="text-uppercase col-4 mb-4">Tarifas</h2>
+                            <div class="col-3">
+                                <p>1 actividad/semana</p>
+                                <p class="precio">55€/mes<br>145€/trimestre</p>
+                            </div>
+                            
                             <hr class="divider bg-black opacity-25 px-5"/>
-                            <p>2 actividades/semana</p>
-                            <p class="precio">90€/mes<br>270€/trimestre</p>
+                            <div class="col-3">
+                                <p>2 actividades/semana</p>
+                                <p class="precio">95€/mes<br>265€/trimestre</p> 
+                            </div>
+                            
                         </div>
-                        <div class="registro col-12 text-center m-1 py-3">
-                            <a class="btn btn-outline-white" href="https://docs.google.com/forms/d/e/1FAIpQLScEMDJpDFKXOiaWcx3LX5M6sjgQBfQyYAd6SUBohx62f8GDhQ/viewform" target="_blank">Apúntate</a>
-                        </div>     
-                </div>
+                        <!-- TARIFAS-responsive-->
+                        <div class="tarifas-responsive col-12 bg-purple text-left text-black rounded py-5 px-4">
+                            <h2 class="text-uppercase mb-4">Tarifas</h2>
+                            <div>
+                                <p>1 actividad/semana</p>
+                                <p class="precio">55€/mes<br>145€/trimestre</p>
+                            </div>
+                            
+                            <hr class="divider bg-black opacity-25 px-5"/>
+                            <div>
+                                <p>2 actividades/semana</p>
+                                <p class="precio">95€/mes<br>265€/trimestre</p> 
+                            </div>
+                            
+                        </div>
+                        <div class="registro col-12 text-center py-3">
+                            <a class="btn btn-outline-white" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">Apúntate</a>
+                        </div> 
+                    </div>
             </div>
         </section>
         <hr class="divider bg-white opacity-25"/>
@@ -454,12 +825,22 @@
                     <div class="lindy-hop col-12 col-md-6 p-1">
                         <img src="assets/img/la-demo-swing-lab-lindyhop.jpg" class="img-fluid rounded" alt="lindy hop en la demo swing lab Madrid">
                         <h2 class="col-2 text-white text-uppercase">Lindy hop</h2>
-                        <p class="text-white col-11">¡Precaución, altamente adictivo! Es un baile en pareja con la música swing. Se caracteriza por sus divertidas dinámicas en posición abierta y en cerrada, todo dentro de un groove constante y muy gustoso. Está compuesto por una persona que propone un movimiento (leader) y otra que lo sigue activamente (follower). Es el estilo más popular dentro del swing, con un importante carácter social.<br>¿Y de dónde sale esto? Nació en los años 30 en la comunidad afroamericana de las calles de Harlem, Nueva York. Se popularizó en una sala de baile llamada Savoy Ballroom, donde cada noche tocaban grandes orquestas de jazz: la gente se sacaba a bailar para disfrutar de la música, o bien competían entre ellos mostrando sus mejores movimientos. El swing viajó por el espacio-tiempo… y aquí estamos.</p>
+                        <p class="text-white col-11">Es el baile en pareja más popular de la música Swing (un estilo de Jazz). Se origina en 1928, en el barrio afroamericano de Harlem, Nueva York. Su nacimiento ocurre en pleno contexto de segregación racial, como una vía de expresión y escape para la comunidad negra. Fue desarrollándose en el club Savoy Ballroom, donde cada noche tocaban las mejores bandas de Jazz (Chick Webb, Count Basie…).
+                        <br>    
+                        Desde ritmos vertiginosos hasta lentos, en el Lindy se improvisa con divertidas dinámicas, manteniendo siempre un groove muy gustoso. Dentro de la pareja hay una persona que propone movimientos (leader) y otra que los sigue activamente (follower). En este diálogo, tiene lugar la expresión individual, los juegos rítmicos, las propuestas desde follower y la escucha de leader, ¡una conversación bidireccional y con la música como guía!
+                        <br>   
+                        La naturaleza de este baile es social, por lo que durante las clases irás rotando de pareja con tus compis.... y poco a poco, te irás lanzando a ir también a fiestas de Swing, ¡un ambiente muy adictivo!
+                        </p>
                     </div>
                     <div class="solo-jazz col-12 col-md-6 p-1">
                         <img src="assets/img/la-demo-swing-lab-solojazz.jpg" class="img-fluid rounded" alt="solo jazz en la demo swing lab madrid">
                         <h2 class="col-2 text-white text-uppercase">Solo Jazz</h2>
-                        <p class="text-white col-11">Es un baile en individual con la música swing, lleno de creatividad. Con su energía y musicalidad, es ideal para desarrollar tu estilo propio y crear ritmitos, ¡serás un instrumento más! Perfecto también para coger soltura en el movimiento y control del cuerpo en general. Bebe de la mezcla de bailes tradicionales africano-occidentales y a su vez ha servido de inspiración para bailes urbanos posteriores.<br>¡Solo, pero no! Es muy común bailarlo en grupo, en forma de jams para improvisar, o incluso con coreografías. Tiene el mismo origen histórico que el Lindy Hop (afroamericano, años 30) y es absolutamente complementario a él: si ya bailas en pareja, ¡tienes que abrir tu mundo al solo!</p>
+                        <p class="text-white col-11">Es un baile en individual con un origen común al Lindy Hop: comunidad afroamericana, a principios del siglo XX. Bebe de la combinación de bailes tradicionales del áfrica occidental y a su vez ha sido fuente de inspiración para otros bailes posteriores como el Hip Hop o el Break.
+                        <br> 
+                        Se caracteriza por jugar con el ritmo, las figuras y la expresión individual. Por su naturaleza es muy común bailarlo en grupo, en forma de jams para improvisar o incluso con coreografías. Además, si ya bailas Lindy, ¡el Solo es un must para llevar tu baile al siguiente nivel!
+                        <br>    
+                        Nos encanta por sus infinitas posibilidades de movimiento, ¡y porque no necesitas a nadie más para gozártelo!
+                            </p>
                     </div>  
                 </div>
                 
@@ -476,26 +857,26 @@
 
                 <div class="row d-flex equipo justify-content-between">
                     <div class="col-12 col-md-3 p-1 aiala">
-                        <img src="assets/img/Aiala-small.jpeg" class="img-fluid rounded small" alt="Aiala Larreina la demo swing Madrid">
-                        <img src="assets/img/Aiala-large.png" class="img-fluid rounded large" alt="Aiala Larreina la demo swing Madrid">
+                        <img src="assets/img/Aiala-small.jpeg" class="img-fluid rounded" alt="Aiala Larreina la demo swing Madrid">
+                        <!---<img src="assets/img/Aiala-large.png" class="img-fluid rounded large" alt="Aiala Larreina la demo swing Madrid">-->
                         <h4 class="text-white  py-3">Aiala Larreina</h4>
                         <p class="text-white ">Comenzó a bailar de pequeña euskal dantzak (folclore vasco), tanto en clases como en fiestas populares y familiares. Después de dejar las clases, tras 8 años en esta disciplina, probó otros bailes de diferentes estilos, fue al conocer el swing y profundizar en su historia y cultura, cuando conectó con un baile que la movió de nuevo emocionalmente. Hace 6 años se trasladó a Madrid, y ahora imparte clases y difunde la historia que acompaña a esta cultura.</p>
                     </div>
                     <div class="col-12 col-md-3 p-1 gurutz">
-                        <img src="assets/img/Gurutz-small.jpeg" class="img-fluid small rounded" alt="Aiala Larreina la demo swing Madrid">
-                        <img src="assets/img/Gurutz-large.png" class="img-fluid rounded large" alt="Gurutz Larrea la demo swing Madrid">
+                        <img src="assets/img/Gurutz-small.jpeg" class="img-fluid rounded" alt="Aiala Larreina la demo swing Madrid">
+                        <!---<img src="assets/img/Gurutz-large.png" class="img-fluid rounded large" alt="Gurutz Larrea la demo swing Madrid">-->
                         <h4 class="text-white py-3">Gurutz Larrea</h4>
                         <p class="text-white ">Descubrió el swing en el festival de Jazz de Vitoria-Gasteiz, ciudad natal donde empezó a bailar. Poco a poco fué interesándose cada vez más en el mundo del swing y fue dejando a un lado el skate y el balonmano, deportes que llevaba practicando desde los 13 años. Lleva 6 años instalado en Madrid y sigue desarrollándose como bailarín y profesor en este proyecto que comparte junto con sus compañeras. </p>
                     </div>
                     <div class="col-12 col-md-3 p-1 julie">
-                        <img src="assets/img/Julie-small.jpeg" class="img-fluid rounded small" alt="Aiala Larreina la demo swing Madrid">
-                        <img src="assets/img/Julie-large.png" class="img-fluid rounded large" alt="Julie Correa la demo swing Madrid">
+                        <img src="assets/img/Julie-small.jpeg" class="img-fluid rounded" alt="Aiala Larreina la demo swing Madrid">
+                        <!---<img src="assets/img/Julie-large.png" class="img-fluid rounded large" alt="Julie Correa la demo swing Madrid">-->
                         <h4 class="text-white py-3">Julie Correa</h4>
                         <p class="text-white">Desde pequeña le ha gustado todo tipo de música y bailarla; probó algunos deportes por poco tiempo y ya de adulta comenzó a sentir la necesidad de mover su cuerpo a diario. Descubrió el Lindy Hop primero a través de las clases, luego en el baile social y enseguida conectó con el ritmo y la filosofía del jazz. A día de hoy continúa creciendo como bailarina y profe de Lindy y Solo  y recientemente ha empezado a indagar en estilos urbanos como el Locking o el Popping. Además de profe, es quien te responde en las redes sociales de la escuela.</p>
                     </div>
                     <div class="col-12 col-md-3 p-1 ross">
-                        <img src="assets/img/Ross-small.jpeg" class="img-fluid rounded small" alt="Aiala Larreina la demo swing Madrid">
-                        <img src="assets/img/Ross-large.png" class="img-fluid rounded large" alt="Rossana Tamiello la demo swing Madrid">
+                        <img src="assets/img/Ross-small.jpeg" class="img-fluid rounded" alt="Aiala Larreina la demo swing Madrid">
+                        <!---<img src="assets/img/Ross-large.png" class="img-fluid rounded large" alt="Rossana Tamiello la demo swing Madrid">-->
                         <h4 class="text-white py-3">Rossana Tamiello</h4>
                         <p class="text-white">Se acercó por primera vez a la cultura swing cuando se mudó de Venecia a Madrid, atraída por la energía del baile y la potencia de la música.  Desde entonces han pasado 10 años en los que se ha desarrollado como bailarina y profesora y ha profundizado el conocimiento de la historia del baile y de lxs bailarinxs. Actualmente da clase de Lindy Hop y Solo Jazz, aparte de ser maestra de Pilates y costurera todoterreno. Si nos contactas por correo o por whatsapp, es Rossana quien te contesta y resuelve las dudas.</p>
                     </div>
@@ -527,6 +908,10 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script src="js/banner_cookies.js"></script>
+
+        <!-- fontawesome icon-->
+        <script src="https://kit.fontawesome.com/da603d3063.js"></script>
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->

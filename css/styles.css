@@ -126,7 +126,7 @@
 
 }
 
-@media(max-width:990px){
+@media(max-width:1000px){
 
   .navbar.active{
     background-color:#D4C5FF ;
@@ -198,51 +198,223 @@ header video{
   background-color: #D4C5FF;
 }
 
-.horario .col-3{
-  margin: 1px;
-  padding: 4px 1px 1px 1px;
+
+/*-----HORARIO------*/
+
+
+.top-left-rounded{
+  border-radius: 0.25rem 0 0 0 ;
 }
 
-.horario .x::first-letter{
-  font-size: 0;
+.top-rigth-rounded{
+  border-radius: 0 0.25rem 0 0 ;
 }
-.horario .day, .horario .hour{
-  font-size: 1rem;
+
+.bottom-rigth-rounded{
+  border-radius: 0 0 0.25rem  0 ;
+}
+
+.bottom-left-rounded{
+  border-radius: 0  0 0 0.25rem ;
+}
+
+
+.bg-light-purple{
+  background-color: #FAF8FF;
+}
+
+.bg-soft-purple{
+  background-color: #D4C5FF;
+}
+
+.vertical{
+  -webkit-transform: rotate(-90deg); 
+  -moz-transform: rotate(-90deg);
+}
+
+.table-desktop{
+  width: 100%;
+}
+
+.table-desktop th, .table-desktop td{
+  border: 1px solid #D5D5D5;
+}
+
+
+.main-time{
+  height: 100%;
+  background-color: #D4C5FF;
+  font-weight: 300;
+}
+
+.table-desktop .day{
+  font-family:'Manrope', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding: 2rem;
+}
+
+.table-desktop div{
+  text-align: left;
+}
+
+.table-desktop div p{
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.table-desktop .class-time{
+  font-family:'Manrope', sans-serif;
+  font-size: 0.6rem;
+  color: #808080 ;
   margin-bottom: 0.5rem;
-  margin-left: 0,5rem;
 }
 
-.horario .class{
-  font-size: 0.93rem;
+.table-desktop .class{
+  margin: 1rem;
+}
+.table-desktop .class-name{
+  font-family:'Manrope', sans-serif;
+  font-size: 1rem;
+  color: #5015FA ;
 }
 
-.horario .teachers{
-  font-size: 0.75rem;
+.table-desktop .class-level{
+  font-family:'Manrope', sans-serif;
+  font-size: 1rem;
+  color: #000000 ;
+  margin-bottom: 1rem;
 }
 
-.horario .col{
+.table-desktop .class-teacher{
+  font-family: 'kaftan_serif_-_trialregular', Arial, sans-serif;
+  font-size: 0.6rem;
+  color: #6B6B6B ;
+}
+
+.table-desktop .bg-light-purple:hover, .table-desktop .bg-white:hover, .table-responsive .bg-white:hover, .table-responsive .bg-light-purple:hover{
+  background-color: #D4C5FF !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----HORARIO-responsive-----*/
+
+.table-responsive{
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+}
+
+.table-responsive .class{
+  text-align: left;
+  margin: 1rem;
   position: relative;
-  min-width: 20%;
 }
 
-.horario small{
-    position: absolute;
-    top: -10px;
-    left: 0px;
-    font-size: 0.35rem;
-    background: #D4C5FF;
-    padding: 0.1rem;
-    border-radius: 6px;
-    font-family: 'Manrope', sans-serif;
+.table-responsive .day{
+  font-family:'Manrope', sans-serif;
+  font-size: 1.56rem;
+  font-weight: 300;
+  padding: 1.5rem;
+  border-bottom: 1px solid #D5D5D5;
 }
 
-.horario p{
-    font-family: 'Manrope', sans-serif;
-    margin-bottom: 0.5rem;
-    margin-left: 0.5rem;
+.table-responsive p{
+  line-height: normal;
+  margin: 0;
+  padding: 0;
 }
 
-.tarifas h2, .tarifas .precio{
+.table-responsive .class-time{
+  font-family:'Manrope', sans-serif;
+  font-size: 0.688rem;
+  color: #808080 ;
+  margin-bottom: 0.5rem;
+}
+
+.table-responsive .class{
+  margin: 1rem;
+}
+
+.table-responsive .class-name{
+  font-family:'Manrope', sans-serif;
+  font-size: 1.125rem;
+  color: #5015FA ;
+}
+
+.table-responsive .class-level{
+  font-family:'Manrope', sans-serif;
+  font-size: 1.125rem;
+  color: #000000 ;
+  margin-bottom: 1rem;
+}
+
+.table-responsive .class-teacher{
+  font-family: 'kaftan_serif_-_trialregular', Arial, sans-serif;
+  font-size: 0.688rem;
+  color: #6B6B6B ;
+  position: absolute;
+  top: 0px;
+  right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----TARIFAS-----*/
+
+.tarifas{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.tarifas-responsive{
+  display: none;
+}
+
+.tarifas .divider{
+  -webkit-transform: rotate(-90deg); 
+  -moz-transform: rotate(-90deg);
+}
+
+.tarifas h2, .tarifas .precio, .tarifas-responsive h2, .tarifas-responsive .precio{
   font-family: 'kaftan_serif_-_trialregular', Arial, sans-serif;
 }
 
@@ -257,6 +429,12 @@ header video{
 /*.lindy-hop, .solo-jazz, .equipo{
   border: 3px solid black;
 }*/
+
+
+
+
+
+/*-----CLASES-----*/
 
 .lindy-hop h2, .solo-jazz h2{
   font-size: 4.2rem;
@@ -300,7 +478,7 @@ footer hr.divider{
   width: 28px;
 }
 
-@media (max-width: 990px){
+@media (max-width: 1000px){
   #navbarResponsive{
     justify-content: space-between;
   }
@@ -314,6 +492,23 @@ footer hr.divider{
     width: 100%;
   }
 
+  .table-desktop{
+    display: none;
+  }
+
+  .table-responsive{
+    display: flex;
+  }
+
+  .tarifas{
+    display: none;
+  }
+
+  .tarifas-responsive{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid black;
+  }
 }
 
 @media (max-width: 768px){
@@ -327,31 +522,6 @@ footer hr.divider{
 
   .horario h2{
     text-align: left;
-  }
-
-  .horario .day{
-    font-size: 0;
-  }
-
-  .horario .day::first-letter{
-    font-size: 1.12rem;
-  }
-
-  .horario .hour{
-    font-size: 0.9rem;
-
-  }
-  .horario .class{
-    overflow: hidden;
-    font-size: 0.8rem;
-  }
-
-  .horario .class span{
-    font-size: 0.6rem;
-  }
-
-  .horario .teachers{
-    font-size: 0.5rem;
   }
 
   .equipo .large {
@@ -1001,7 +1171,7 @@ progress {
   margin-top: var(--bs-gutter-y);
 }
 
-.col {
+.col{
   flex: 1 0 0%;
 }
 
@@ -4571,7 +4741,7 @@ textarea.form-control-lg {
     overflow-y: visible;
   }
 }
-@media (min-width: 990px) {
+@media (min-width: 1000px) {
   .navbar-expand-lg {
     flex-wrap: nowrap;
     justify-content: flex-start;
