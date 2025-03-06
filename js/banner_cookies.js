@@ -1,26 +1,27 @@
-/* Javascript to show and hide cookie banner using localstorage */
 /* Shows the Cookie banner */
-function showCookieBanner(){
-    let cookieBanner = document.getElementById("cb-cookie-banner");
+function showCookieBanner() {
+    const cookieBanner = document.getElementById("cb-cookie-banner");
     cookieBanner.style.display = "block";
-   }
-   
-   /* Hides the Cookie banner and saves the value to localstorage */
-   function hideCookieBanner(){
+}
+
+/* Hides the Cookie banner and saves the user's preference to localStorage */
+function hideCookieBanner() {
     localStorage.setItem("cb_isCookieAccepted", "yes");
-    let cookieBanner = document.getElementById("cb-cookie-banner");
+    const cookieBanner = document.getElementById("cb-cookie-banner");
     cookieBanner.style.display = "none";
-   }
-   
-   /* Checks the localstorage and shows Cookie banner based on it. */
-   function initializeCookieBanner(){
-    let isCookieAccepted = localStorage.getItem("cb_isCookieAccepted");
-    if(isCookieAccepted === null)
-    {
-     localStorage.setItem("cb_isCookieAccepted", "no");
-     showCookieBanner();
+}
+
+/* Checks the localStorage and shows the Cookie banner if cookies are not yet accepted */
+function initializeCookieBanner() {
+    const isCookieAccepted = localStorage.getItem("cb_isCookieAccepted");
+
+    // If no value is found in localStorage, or if the user has not accepted cookies, show the banner
+    if (isCookieAccepted === null || isCookieAccepted === "no") {
+        showCookieBanner();
     }
-    if(isCookieAccepted === "no"){
-     showCookieBanner();
-    }
-   }
+}
+
+// Initialize the cookie banner when the page loads
+window.onload = function() {
+    initializeCookieBanner();
+};

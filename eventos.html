@@ -29,6 +29,11 @@
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/stylesheet.css" rel="stylesheet" />
         <link href="css/whatsapp.css" rel="stylesheet" />
+
+        <!-- DATA.JSON -->
+        <script src="./data/data.js" defer></script>
+
+        <!-- DATA.JSON -->
         
         
 
@@ -42,6 +47,8 @@
         gtag('config', 'G-WN1PSY6X3K');
         </script>
 
+        
+
     </head>
     <body id="page-top" class="bg-black">
         <a href="https://wa.me/+34660942608" target="_blank" class="whatsapp-button">
@@ -50,7 +57,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top gx-4 gx-lg-5 px-4 px-lg-5 py-3 w-100" id="mainNav">
             <div class="container-fluid w-100">
-                <a class="navbar-brand" href="#"><img src="assets/logo/logo_white.png" height="40px" alt="logo de la demo swing lab"></a>
+                <a class="navbar-brand" href="https://lademoswinglab.es/"><img src="assets/logo/logo_white.png" height="40px" alt="logo de la demo swing lab"></a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 
                         <div class="hamburger">
@@ -61,14 +68,14 @@
                 </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link text-white" href="index.html">Clases y horarios</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="index.html">Horarios y tarifas</a></li>
                         <li class="nav-item"><a class="nav-link text-white" href="#">Talleres y eventos</a></li>
                         <li class="nav-item"><a class="nav-link text-white" href="index.html">¿Qué bailamos?</a></li>
                         <li class="nav-item"><a class="nav-link text-white" href="index.html">¿Quiénes somos?</a></li>
                         <li class="nav-item"><a class="nav-link text-white" href="index.html">Contacto</a></li> 
                     </ul>
                     <form class="form-inline my-2 ml-lg-4 my-lg-0">
-                        <a class="btn btn-outline-white" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScEMDJpDFKXOiaWcx3LX5M6sjgQBfQyYAd6SUBohx62f8GDhQ/viewform">Apúntate</a>
+                        <a class="btn btn-outline-white" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfobciwRwRixQbc7MfYQEgq5MSWnvtTq2dASlTSUCqYvdU1Vw/viewform">Apúntate</a>
                     </form>
                 </div>
             </div>
@@ -78,35 +85,15 @@
         <header class="container-fluid bg-black my-5 w-100">
             <div class="gx-4 gx-lg-5 px-4 px-lg-5">
                     <div class="row d-flex justify-content-start">
-                        <h1 class="aprende col-9 text-white">Talleres y eventos</h1>
+                        <h1 class="aprende text-white">Talleres y eventos</h1>
                     </div>
             </div>
         </header>
-        <main class="cards-grid">      
- 
-            <section class="card-container">
-                <article class="card">
-                    <div class="card_front-card">
-                        <span class="front-card_date">16/</br>09</span>
-                        <p class="front-card_time">19:00 a 22:00</br>en La Demo</p>
-                        <div class="front-card_divider"></div>
-                        <h2 class="front-card_tittle">Nuevo curso!</h2>
-                        <span class="material-symbols-outlined">
-                            right_click
-                        </span>
-                    </div>
+        <main class="cards-grid events">     
+            <div id="events">
+                
 
-                    <div class="card_back-card">
-                        <h2 class="back-card_tittle">Comienzo de curso</h2>
-                        <p class="back-card_time">19:00 a 22:00</br>en Tirso de Molina</p>
-                        <div class="back-card_divider"></div>
-                        <p class="back-card_content">Comienza el curso 2024-2025 bailando Lindy Hop y Solo Jazz con nosotras. Clases en Tirso de Molina, Madrid. Para inscribirte puedes ver todos los horarios en el siguiente link.</p>
-                        <a target="_blank" class="back-card_button" href="https://docs.google.com/forms/d/e/1FAIpQLSfobciwRwRixQbc7MfYQEgq5MSWnvtTq2dASlTSUCqYvdU1Vw/viewform">Apúntate aquí</a>
-                        
-                </article>
-            </section> 
-
-            
+            </div> 
         </main>
       
 
@@ -143,5 +130,7 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+        
     </body>
 </html>

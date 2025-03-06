@@ -28,6 +28,7 @@
         <link href="css/stylesheet.css" rel="stylesheet" />
         <link href="css/whatsapp.css" rel="stylesheet" />
         <link href="css/banner_cookies.css" rel="stylesheet"/>
+        <link href="css/legal.css" rel="stylesheet"/>
 
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-WN1PSY6X3K"></script>
@@ -55,30 +56,36 @@
         src="https://www.facebook.com/tr?id=582796100038733&ev=PageView&noscript=1"
         /></noscript>
         <!-- End Meta Pixel Code -->
+        <!-- DATA.JSON -->
+        
+
+
+
     </head>
     <body id="page-top" class="bg-black">
 
         <!-- Cookie Banner -->
         <div id="cb-cookie-banner" class="alert alert-dark text-center mb-0" role="alert">
-        🍪 This website uses cookies to ensure you get the best experience on our website.
-        <a href="https://lademoswinglab.es/" target="blank">Learn more</a>
-        <button type="button" class="btn btn-primary btn-sm ms-3" onclick="window.cb_hideCookieBanner()">
-        I Got It
-        </button>
+            <p>Las cookies de este sitio web se usan para personalizar el contenido y analizar el tráfico.🍪 </p>
+            <a href="https://lademoswinglab.es/politica-de-cookies.html" target="blank">Saber más</a>
+            <button type="button" class="btn btn-primary btn-sm ms-3" onclick="window.hideCookieBanner()">
+            OK
+            </button>
         </div>
         <!-- End of Cookie Banner -->
 
 
-
-
+        <!---whatsapp-->
         <a href="https://wa.me/+34660942608" target="_blank" class="whatsapp-button">
             <i class="fa fa-whatsapp"></i>
         </a>
-        
+        <!---end of whatsapp-->
+
+
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top gx-4 gx-lg-5 px-4 px-lg-5 py-3 w-100" id="mainNav">
             <div class="container-fluid w-100">
-                <a class="navbar-brand" href="#"><img src="assets/logo/logo_white.png" height="40px" alt="logo de la demo swing lab"></a>
+                <a class="navbar-brand" href="https://lademoswinglab.es/"><img src="assets/logo/logo_white.png" height="40px" alt="logo de la demo swing lab"></a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 
                         <div class="hamburger">
@@ -89,7 +96,7 @@
                 </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link text-white" href="#about">Clases y horarios</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#about">Horarios y tarifas</a></li>
                         <li class="nav-item"><a class="nav-link text-white" href="eventos.html">Talleres y eventos</a></li>
                         <li class="nav-item"><a class="nav-link text-white" href="#services">¿Qué bailamos?</a></li>
                         <li class="nav-item"><a class="nav-link text-white" href="#us">¿Quiénes somos?</a></li>
@@ -138,12 +145,12 @@
                                         <th class="day col-1 bg-soft-purple top-left-rounded" scope="col"></th>
                                         <th class="day col-2 bg-white" scope="col">Lunes</th>
                                         <th class="day col-2 bg-white" scope="col">Martes</th>
-                                        <th class="day col-2 bg-white" scope="col">Miercoles</th>
+                                        <th class="day col-2 bg-white" scope="col">Miércoles</th>
                                         <th class="day col-2 bg-white" scope="col">Jueves</th>
                                         <th class="day col-2 bg-white top-rigth-rounded" scope="col">Viernes</th>
                                     </tr>
                                 </thead>
-                                <tbody>
+                                <tbody id="tablaHorarios">
                                     <!-- HORARIO 18:00-->
                                     <tr>
                                       <th class="main-time bg-soft-purple" scope="row"><p class="vertical">18:00</p></th>
@@ -154,9 +161,9 @@
                                       <td class="bg-light-purple">
                                         <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
                                             <div class="class">
-                                                <p class="class-time">18:00-19:00</p>
+                                                <p class="class-time">18:00-19:00 - Sala Bambú Danza</p>
                                                 <p class="class-name">Solo Jazz</p>
-                                                <p class="class-level">Iniciacion(desde 0)</p>
+                                                <p class="class-level">Iniciación</p>
                                                 <p class="class-teacher">Julie</p>
                                             </div>  
                                         </a>
@@ -170,47 +177,51 @@
                                         <td class="bg-white">
                                             <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
                                                 <div class="class">
-                                                    <p class="class-time">19:00-20:00</p>
+                                                    <p class="class-time">19:00-20:00 - Sala Bambú Danza</p>
                                                     <p class="class-name">Lindy Hop</p>
                                                     <p class="class-level">Principiantes 3</p>
                                                     <p class="class-teacher">Julie & Ross</p>
                                                 </div>  
                                             </a>
                                         </td>   
+                                        <!-- Martes 19:00-->
                                         <td class="bg-white">
                                             <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
                                                 <div class="class">
-                                                    <p class="class-time">19:00-20:00</p>
+                                                    <p class="class-time">19:00-20:00 - Sala Bambú Danza</p>
                                                     <p class="class-name">Lindy Hop</p>
-                                                    <p class="class-level">Iniciacion(desde 0)</p>
+                                                    <p class="class-level">Principiantes 1</p>
                                                     <p class="class-teacher">Aiala & Ross</p>
                                                 </div>  
                                             </a>                                         
                                         </td>
+                                        <!-- miercoles 19:00-->
                                         <td class="bg-white">
                                             <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
                                                 <div class="class">
-                                                    <p class="class-time">19:00-20:00</p>
+                                                    <p class="class-time">19:00-20:00 - Sala Bambú Danza</p>
                                                     <p class="class-name">Lindy Hop</p>
                                                     <p class="class-level">Intermedio +</p>
                                                     <p class="class-teacher">Aiala & Gurutz</p>
                                                 </div>  
                                             </a>
                                         </td>
+                                        <!-- Jueves 19:00-->
                                         <td class="bg-white">
                                             <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
                                                 <div class="class">
-                                                    <p class="class-time">19:00-20:00</p>
+                                                    <p class="class-time"><b>*19:30-20:30 - Teatro Charivari</b></p>
                                                     <p class="class-name">Solo Jazz</p>
-                                                    <p class="class-level">Iniciacion(desde 0)</p>
+                                                    <p class="class-level">Iniciación(desde 0)</p>
                                                     <p class="class-teacher">Julie</p>
                                                 </div>  
                                             </a>
                                         </td>
+                                        <!-- viernes 19:00-->
                                         <td class="bg-white">
                                             <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
                                                 <div class="class">
-                                                    <p class="class-time">19:00-20:00</p>
+                                                    <p class="class-time">19:00-20:00 - Sala Bambú Danza</p>
                                                     <p class="class-name">Solo Jazz</p>
                                                     <p class="class-level">Principiantes 2</p>
                                                     <p class="class-teacher">Julie</p>
@@ -227,43 +238,47 @@
                                             <td class="bg-light-purple">
                                                 <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
                                                     <div class="class">
-                                                        <p class="class-time">19:00-20:00</p>
+                                                        <p class="class-time">19:00-20:00 - Sala Bambú Danza</p>
                                                         <p class="class-name">Solo Jazz</p>
-                                                        <p class="class-level">Iniciacion(desde 0)</p>
+                                                        <p class="class-level">Iniciación</p>
                                                         <p class="class-teacher">Aiala</p>
                                                     </div>  
                                                 </a>
-                                            </td>   
+                                            </td>
+                                            <!-- martes 19:00 --> 
                                             <td class="bg-light-purple">
                                                 <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
                                                     <div class="class">
-                                                        <p class="class-time">19:00-20:00</p>
+                                                        <p class="class-time">19:00-20:00 - Casa Granada</p>
                                                         <p class="class-name">Solo Jazz</p>
                                                         <p class="class-level">Intermedio/Avanzado</p>
                                                         <p class="class-teacher">Gurutz</p>
                                                     </div>  
                                                 </a>                                        
                                             </td>
+                                            <!-- miercoles 19:00 --> 
                                             <td class="bg-light-purple">
                                                 <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
                                                     <div class="class">
-                                                        <p class="class-time">19:00-20:00</p>
+                                                        <p class="class-time">19:00-20:00 - Sala Alarde</p>
                                                         <p class="class-name">Lindy Hop</p>
-                                                        <p class="class-level">Iniciacion(desde 0)</p>
-                                                        <p class="class-teacher"></p>
+                                                        <p class="class-level">Principiantes 1</p>
+                                                        <p class="class-teacher">Ross & Javi</p>
                                                     </div>  
                                                 </a>
                                             </td>
+                                            <!-- jueves 19:00 --> 
                                             <td class="bg-light-purple">
                                                 <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
                                                     <div class="class">
-                                                        <p class="class-time">19:00-20:00</p>
+                                                        <p class="class-time">19:00-20:00 - Sala Bambú Danza</p>
                                                         <p class="class-name">Lindy Hop</p>
                                                         <p class="class-level">Avanzado</p>
                                                         <p class="class-teacher">Aiala & Gurutz</p>
                                                     </div>  
                                                 </a>
                                             </td>
+                                            <!-- viernes 19:00 --> 
                                             <td class="bg-light-purple">
                                                 <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
                                                     <div class="class">
@@ -285,50 +300,54 @@
                                             <td class="bg-white">
                                                 <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
                                                     <div class="class">
-                                                        <p class="class-time">20:00-21:00</p>
+                                                        <p class="class-time">20:00-21:00 - Sala Bambú Danza</p>
                                                         <p class="class-name">Lindy Hop</p>
                                                         <p class="class-level">Intermedio</p>
                                                         <p class="class-teacher">Ross & Gurutz</p>
                                                     </div>  
                                                 </a>
                                             </td>   
+                                        <!-- martes 20:00 -->
                                             <td class="bg-white">
                                                 <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
                                                     <div class="class">
-                                                        <p class="class-time">20:00-21:00</p>
+                                                        <p class="class-time">20:00-21:00 - Sala Bambú Danza</p>
                                                         <p class="class-name">Lindy Hop</p>
                                                         <p class="class-level">Avanzado +</p>
                                                         <p class="class-teacher">Aiala & Gurutz</p>
                                                     </div>  
                                                 </a>                                       
                                             </td>
+                                        <!-- miercoles 20:00 -->
                                             <td class="bg-white">
                                                 <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
                                                     <div class="class">
-                                                        <p class="class-time">20:00-21:00</p>
+                                                        <p class="class-time">20:00-21:00 - Sala Bambú Danza</p>
                                                         <p class="class-name">Lindy Hop</p>
-                                                        <p class="class-level">Intermedio</p>
+                                                        <p class="class-level">Principiantes 3</p>
                                                         <p class="class-teacher">Aiala & Gurutz</p>
                                                     </div>  
                                                 </a>
                                             </td>
+                                        <!-- jueves 20:00 -->
                                             <td class="bg-white">
                                                 <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
                                                     <div class="class">
-                                                        <p class="class-time">20:00-21:00</p>
+                                                        <p class="class-time">20:00-21:00 - Sala Bambú Danza</p>
                                                         <p class="class-name">Lindy Hop</p>
-                                                        <p class="class-level">Principiantes 1</p>
-                                                        <p class="class-teacher">Ross & Julie</p>
+                                                        <p class="class-level">Principiantes 2</p>
+                                                        <p class="class-teacher">Aiala & Gurutz</p>
                                                     </div>  
                                                 </a>
                                             </td>
+                                        <!-- viernes 20:00 -->
                                             <td class="bg-white">
                                                 <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
                                                     <div class="class">
-                                                        <p class="class-time">20:00-21:00</p>
+                                                        <p class="class-time">20:00-21:00 - Sala Bambú Danza</p>
                                                         <p class="class-name">Lindy Hop</p>
-                                                        <p class="class-level">Iniciacion(desde 0)</p>
-                                                        <p class="class-teacher"></p>
+                                                        <p class="class-level">Principiantes 1</p>
+                                                        <p class="class-teacher">Javi & Julie</p>
                                                     </div>  
                                                 </a>
                                             </td>
@@ -342,13 +361,14 @@
                                             <td class="bg-light-purple">
                                                 <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
                                                     <div class="class">
-                                                        <p class="class-time">20:00-21:00</p>
-                                                        <p class="class-name">Lindy Hop</p>
-                                                        <p class="class-level">Iniciacion(desde 0)</p>
-                                                        <p class="class-teacher">Aiala & Julie</p>
+                                                        <p class="class-time"></p>
+                                                        <p class="class-name"></p>
+                                                        <p class="class-level"></p>
+                                                        <p class="class-teacher"></p>
                                                     </div>  
                                                 </a>
-                                            </td>   
+                                            </td>
+                                        <!-- martes 20:00 -->   
                                             <td class="bg-light-purple">
                                                 <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
                                                     <div class="class">
@@ -359,26 +379,29 @@
                                                     </div>  
                                                 </a>                                       
                                             </td>
+                                        <!-- miercoles 20:00 -->
                                             <td class="bg-light-purple">
                                                 <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
                                                     <div class="class">
-                                                        <p class="class-time">20:00-21:00</p>
+                                                        <p class="class-time">20:00-21:00 - Sala Alarde</p>
                                                         <p class="class-name">Solo Jazz</p>
                                                         <p class="class-level">Intermedio</p>
                                                         <p class="class-teacher">Ross</p>
                                                     </div>  
                                                 </a>
                                             </td>
+                                        <!-- jueves 20:00 -->
                                             <td class="bg-light-purple">
                                                 <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
                                                     <div class="class">
-                                                        <p class="class-time">20:00-21:00</p>
+                                                        <p class="class-time"><b>*20:30-21:30 - Teatro Charivari</b></p>
                                                         <p class="class-name">Lindy Hop</p>
-                                                        <p class="class-level">Iniciacion(desde 0)</p>
-                                                        <p class="class-teacher">Aiala & Gurutz</p>
+                                                        <p class="class-level">Principiantes 1</p>
+                                                        <p class="class-teacher">Ross & Julie</p>
                                                     </div>  
                                                 </a>
                                             </td>
+                                        <!-- viernes 20:00 -->
                                             <td class="bg-light-purple">
                                                 <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
                                                     <div class="class">
@@ -398,43 +421,47 @@
                                             <td class="bg-white">
                                                 <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
                                                     <div class="class">
-                                                        <p class="class-time">21:00-22:00</p>
+                                                        <p class="class-time">21:00-22:00 - Sala Bambú Danza</p>
                                                         <p class="class-name">Lindy Hop</p>
                                                         <p class="class-level">Principiantes 2</p>
                                                         <p class="class-teacher">Julie & Gurutz</p>
                                                     </div>  
                                                 </a>
                                             </td>   
+                                            <!-- Martes 21:00 -->
                                             <td class="bg-white"> 
                                                 <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
                                                     <div class="class">
-                                                        <p class="class-time">21:00-22:00</p>
+                                                        <p class="class-time">21:00-22:00 - Sala Bambú Danza</p>
                                                         <p class="class-name">Lindy Hop</p>
                                                         <p class="class-level">Avanzado</p>
                                                         <p class="class-teacher">Aiala & Gurutz</p>
                                                     </div>  
                                                 </a>                                          
                                             </td>
+                                            <!-- Miercoles 21:00 -->
                                             <td class="bg-white">
                                                 <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
                                                     <div class="class">
-                                                        <p class="class-time">21:00-22:00</p>
+                                                        <p class="class-time">21:00-22:00 - Sala Bambú Danza</p>
                                                         <p class="class-name">Lindy Hop</p>
-                                                        <p class="class-level">Iniciacion(desde 0)</p>
-                                                        <p class="class-teacher"></p>
+                                                        <p class="class-level">Intermedio +</p>
+                                                        <p class="class-teacher">Ross & Gurutz</p>
                                                     </div>  
                                                 </a>
                                             </td>
+                                            <!-- Jueves 21:00 -->
                                             <td class="bg-white">
                                                 <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
                                                     <div class="class">
-                                                        <p class="class-time">21:00-22:00</p>
+                                                        <p class="class-time">21:00-22:00 - Sala Bambú Danza</p>
                                                         <p class="class-name">Lindy Hop</p>
                                                         <p class="class-level">Principiantes 3</p>
-                                                        <p class="class-teacher">Aiala & Julie</p>
+                                                        <p class="class-teacher">Aiala & Gurutz</p>
                                                     </div>  
                                                 </a>
                                             </td>
+                                            <!-- Viernes 21:00 -->
                                             <td class="bg-white">
                                                 <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
                                                     <div class="class">
@@ -455,7 +482,7 @@
                                             <td class="bg-light-purple">
                                                 <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
                                                     <div class="class">
-                                                        <p class="class-time">21:00-22:00</p>
+                                                        <p class="class-time">21:00-22:00 - Sala Alarde</p>
                                                         <p class="class-name">Solo Jazz</p>
                                                         <p class="class-level">Principiantes 1</p>
                                                         <p class="class-teacher">Ross</p>
@@ -475,10 +502,10 @@
                                             <td class="bg-light-purple">
                                                 <a href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
                                                     <div class="class">
-                                                        <p class="class-time">21:00-22:00</p>
+                                                        <p class="class-time">21:00-22:00 - Sala Alarde</p>
                                                         <p class="class-name">Lindy Hop</p>
-                                                        <p class="class-level">Intermedio +</p>
-                                                        <p class="class-teacher">Ross & Gurutz</p>
+                                                        <p class="class-level">Iniciación(desde 0)</p>
+                                                        <p class="class-teacher">Aiala & Marina</p>
                                                     </div>  
                                                 </a>
                                             </td>
@@ -507,7 +534,8 @@
 
                                   </tbody>
                             </table>
-                            <!--LUNES-->
+                        <!--HORARIOS SMALL-->
+                        <!--LUNES-->
                             <div class="table-responsive rounded">  
                                     <div class="day bg-white">Lunes</div>
                                     <a class="bg-white" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
@@ -521,25 +549,25 @@
 
                                     <a class="bg-white" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
                                         <div class="class">
-                                            <p class="class-time">19:00-20:00</p>
+                                            <p class="class-time">19:00-20:00 - Sala Bambú Danza</p>
                                             <p class="class-name">Lindy Hop</p>
-                                            <p class="class-level">Principiantes 2</p>
+                                            <p class="class-level">Principiantes 3</p>
                                             <p class="class-teacher">Julie & Ross</p>
                                         </div>  
                                     </a>
 
                                     <a class="bg-light-purple" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
                                         <div class="class">
-                                            <p class="class-time">19:00-20:00</p>
+                                            <p class="class-time">19:00-20:00 - Sala Bambú Danza</p>
                                             <p class="class-name">Solo Jazz</p>
-                                            <p class="class-level">Iniciacion(desde 0)</p>
+                                            <p class="class-level">Iniciación</p>
                                             <p class="class-teacher">Aiala</p>
                                         </div>  
                                     </a>
 
                                     <a class="bg-white" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
                                         <div class="class">
-                                            <p class="class-time">20:00-21:00</p>
+                                            <p class="class-time">20:00-21:00 - Sala Bambú Danza</p>
                                             <p class="class-name">Lindy Hop</p>
                                             <p class="class-level">Intermedio</p>
                                             <p class="class-teacher">Ross & Gurutz</p>
@@ -548,26 +576,17 @@
 
                                     <a class="bg-light-purple" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
                                         <div class="class">
-                                            <p class="class-time">20:00-21:00</p>
+                                            <p class="class-time">21:00-22:00 - Sala Bambú Danza</p>
                                             <p class="class-name">Lindy Hop</p>
-                                            <p class="class-level">Iniciacion(desde 0)</p>
-                                            <p class="class-teacher">Aiala & Julie</p>
-                                        </div>  
-                                    </a>
-
-                                    <a class="bg-white" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
-                                        <div class="class">
-                                            <p class="class-time">21:00-22:00</p>
-                                            <p class="class-name">Lindy Hop</p>
-                                            <p class="class-level">Principiantes 1</p>
+                                            <p class="class-level">Principiantes 2</p>
                                             <p class="class-teacher">Julie & Gurutz</p>
                                         </div>  
                                     </a>
 
 
-                                    <a class="bg-light-purple" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                    <a class="bg-white" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
                                         <div class="class">
-                                            <p class="class-time">21:00-22:00</p>
+                                            <p class="class-time">21:00-22:00 - Sala Alarde</p>
                                             <p class="class-name">Solo Jazz</p>
                                             <p class="class-level">Principiantes 1</p>
                                             <p class="class-teacher">Ross</p>
@@ -589,16 +608,16 @@
 
                             <a class="bg-white" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
                                 <div class="class">
-                                    <p class="class-time">19:00-20:00</p>
+                                    <p class="class-time">19:00-20:00 - Sala Bambú Danza</p>
                                     <p class="class-name">Lindy Hop</p>
-                                    <p class="class-level">Iniciacion(desde 0)</p>
+                                    <p class="class-level">Principiantes 1</p>
                                     <p class="class-teacher">Aiala & Ross</p>
                                 </div>  
                             </a>
 
                             <a class="bg-light-purple" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
                                 <div class="class">
-                                    <p class="class-time">19:00-20:00</p>
+                                    <p class="class-time">19:00-20:00 - Casa Granada</p>
                                     <p class="class-name">Solo Jazz</p>
                                     <p class="class-level">Intermedio/Avanzado</p>
                                     <p class="class-teacher">Gurutz</p>
@@ -607,7 +626,7 @@
 
                             <a class="bg-white" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
                                 <div class="class">
-                                    <p class="class-time">20:00-21:00</p>
+                                    <p class="class-time">20:00-21:00 - Sala Bambú Danza</p>
                                     <p class="class-name">Lindy Hop</p>
                                     <p class="class-level">Avanzado +</p>
                                     <p class="class-teacher">Aiala & Gurutz</p>
@@ -616,7 +635,7 @@
 
                             <a class="bg-light-purple" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
                                 <div class="class">
-                                    <p class="class-time">21:00-22:00</p>
+                                    <p class="class-time">21:00-22:00 - Sala Bambú Danza</p>
                                     <p class="class-name">Lindy Hop</p>
                                     <p class="class-level">Avanzado</p>
                                     <p class="class-teacher">Aiala & Gurutz</p>
@@ -626,7 +645,7 @@
 
                         <!--MIERCOLES-->
                         <div class="table-responsive rounded">  
-                            <div class="day bg-white">Miercoles</div>
+                            <div class="day bg-white">Miércoles</div>
                             <a class="bg-white" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
                                 <div class="class">
                                     <p class="class-time"></p>
@@ -638,7 +657,7 @@
 
                             <a class="bg-white" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
                                 <div class="class">
-                                    <p class="class-time">19:00-20:00</p>
+                                    <p class="class-time">19:00-20:00 - Sala Bambú Danza</p>
                                     <p class="class-name">Lindy Hop</p>
                                     <p class="class-level">Intermedio +</p>
                                     <p class="class-teacher">Aiala & Gurutz</p>
@@ -647,16 +666,16 @@
 
                             <a class="bg-light-purple" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
                                 <div class="class">
-                                    <p class="class-time">19:00-20:00</p>
+                                    <p class="class-time">19:00-20:00 - Sala Alarde</p>
                                     <p class="class-name">Lindy Hop</p>
-                                    <p class="class-level">Iniciacion (Desde 0)</p>
-                                    <p class="class-teacher"></p>
+                                    <p class="class-level">Principiantes 1</p>
+                                    <p class="class-teacher">Ross & Javi</p>
                                 </div>  
                             </a>   
 
                             <a class="bg-white" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
                                 <div class="class">
-                                    <p class="class-time">20:00-21:00</p>
+                                    <p class="class-time">20:00-21:00 - Sala Bambú Danza</p>
                                     <p class="class-name">Lindy Hop</p>
                                     <p class="class-level">Principiantes 3</p>
                                     <p class="class-teacher">Aiala & Gurutz</p>
@@ -665,7 +684,7 @@
 
                             <a class="bg-light-purple" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
                                 <div class="class">
-                                    <p class="class-time">20:00-21:00</p>
+                                    <p class="class-time">20:00-21:00 - Sala Alarde</p>
                                     <p class="class-name">Solo Jazz</p>
                                     <p class="class-level">Intermedio</p>
                                     <p class="class-teacher">Ross</p>
@@ -674,19 +693,18 @@
 
                             <a class="bg-white" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
                                 <div class="class">
-                                    <p class="class-time">21:00-22:00</p>
-                                    <p class="class-name">Lindy Hop</p>
-                                    <p class="class-level">Iniciacion (Desde 0)</p>
-                                    <p class="class-teacher"></p>
-                                </div>  
-                            </a> 
-
-                            <a class="bg-light-purple" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
-                                <div class="class">
-                                    <p class="class-time">21:00-22:00</p>
+                                    <p class="class-time">21:00-22:00 - Sala Bambú Danza</p>
                                     <p class="class-name">Lindy Hop</p>
                                     <p class="class-level">Intermedio +</p>
                                     <p class="class-teacher">Ross & Gurutz</p>
+                                </div>  
+                            </a>
+                            <a class="bg-light-purple" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
+                                <div class="class">
+                                    <p class="class-time">21:00-22:00 - Sala Alarde</p>
+                                    <p class="class-name">Lindy Hop</p>
+                                    <p class="class-level">Iniciación(Desde 0)</p>
+                                    <p class="class-teacher">Aiala & Marina</p>
                                 </div>  
                             </a> 
                         </div>
@@ -697,7 +715,7 @@
                             <div class="day bg-white">Jueves</div>
                             <a class="bg-white" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
                                 <div class="class">
-                                    <p class="class-time">19:00-20:00</p>
+                                    <p class="class-time">19:00-20:00 - Sala Bambú Danza</p>
                                     <p class="class-name">Lindy Hop</p>
                                     <p class="class-level">Avanzado</p>
                                     <p class="class-teacher">Aiala & Gurutz</p>
@@ -706,37 +724,37 @@
 
                             <a class="bg-light-purple" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
                                 <div class="class">
-                                    <p class="class-time">19:00-20:00</p>
+                                    <p class="class-time">19:30-20:30  - Teatro Charivari</p>
                                     <p class="class-name">Solo Jazz</p>
-                                    <p class="class-level">Iniciacion (Desde 0)</p>
+                                    <p class="class-level">Iniciación(Desde 0)</p>
                                     <p class="class-teacher">Julie</p>
                                 </div>  
                             </a>
 
                             <a class="bg-white" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
                                 <div class="class">
-                                    <p class="class-time">20:00-21:00</p>
+                                    <p class="class-time">20:00-21:00 - Sala Bambú Danza</p>
                                     <p class="class-name">Lindy Hop</p>
-                                    <p class="class-level">Principiantes 1</p>
-                                    <p class="class-teacher">Ross & Julie</p>
+                                    <p class="class-level">Principiantes 2</p>
+                                    <p class="class-teacher">Aiala & Gurutz</p>
                                 </div>  
                             </a>   
 
                             <a class="bg-light-purple" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
                                 <div class="class">
-                                    <p class="class-time">20:00-21:00</p>
+                                    <p class="class-time">20:30-21:30 - Teatro Charivari</p>
                                     <p class="class-name">Lindy Hop</p>
-                                    <p class="class-level">Iniciación (Desde 0)</p>
-                                    <p class="class-teacher"></p>
+                                    <p class="class-level">Principiantes 1</p>
+                                    <p class="class-teacher">Ross & Julie</p>
                                 </div>  
                             </a> 
 
                             <a class="bg-white" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
                                 <div class="class">
-                                    <p class="class-time">21:00-22:00</p>
+                                    <p class="class-time">21:00-22:00 - Sala Bambú Danza</p>
                                     <p class="class-name">Lindy Hop</p>
-                                    <p class="class-level">Principiantes 2</p>
-                                    <p class="class-teacher">Aiala & Julie</p>
+                                    <p class="class-level">Principiantes 3</p>
+                                    <p class="class-teacher">Aiala & Gurutz</p>
                                 </div>  
                             </a> 
                         </div>
@@ -747,16 +765,16 @@
                             <div class="day bg-white">Viernes</div>
                             <a class="bg-white" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
                                 <div class="class">
-                                    <p class="class-time">18:00-19:00</p>
+                                    <p class="class-time">18:00-19:00 - Sala Bambú Danza</p>
                                     <p class="class-name">Solo Jazz</p>
-                                    <p class="class-level">Iniciacion (Desde 0)</p>
+                                    <p class="class-level">Iniciación(Desde 0)</p>
                                     <p class="class-teacher">Julie</p>
                                 </div>  
                             </a>
 
                             <a class="bg-light-purple" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
                                 <div class="class">
-                                    <p class="class-time">19:00-20:00</p>
+                                    <p class="class-time">19:00-20:00 - Sala Bambú Danza</p>
                                     <p class="class-name">Solo Jazz</p>
                                     <p class="class-level">Principiantes 2</p>
                                     <p class="class-teacher">Julie</p>
@@ -765,10 +783,10 @@
 
                             <a class="bg-white" href="https://forms.gle/8vadrVYQGSY9q4KdA" target="_blank">
                                 <div class="class">
-                                    <p class="class-time">20:00-21:00</p>
+                                    <p class="class-time">20:00-21:00 - Sala Bambú Danza</p>
                                     <p class="class-name">Lindy Hop</p>
-                                    <p class="class-level">Iniciacion (Desde 0)</p>
-                                    <p class="class-teacher">Aiala & Julie</p>
+                                    <p class="class-level">Principiantes 1</p>
+                                    <p class="class-teacher">Javi & Julie</p>
                                 </div>  
                             </a>   
                         </div>
@@ -894,14 +912,25 @@
                     <p>Email: <a href="mailto:hola@lademoswinglab.es">hola@lademoswinglab.es</a></p>
                     <p>Whatsapp: <a href="https://wa.me/+34660942608" target="_blank">660 94 26 08</a></p>
                 </div>
-                <div class="rrsscol col-12 col-md-6 col-lg-6 d-flex text-black py-3">
+                <div class="rrsscol col-12 col-md-6 col-lg-6 d-flex text-black py-3 ">
                     <a href="https://www.facebook.com/lademoswinglab" target="_blank" class="rrss"><img src="assets/img/facebook-logo.png" alt="la demo swing lab facebook"></a>
                     <a href="https://www.instagram.com/lademoswinglab/" target="_blank" class="rrss"><img src="assets/img/instagram-logo.png" alt="la demo swing lab instagram"></a>
                     <a href="https://www.youtube.com/channel/UC_rqOJwJNp4n2-XRR5OZlFg" class="rrss" target="_blank"><img src="assets/img/youtube-logo.png" alt="la demo swing lab youtube"></a>
                 </div>
-                
+               
+
             </div>
+
         </footer>
+             <div class="legal-footer bg-light">
+                    <a class="" href="https://lademoswinglab.es/normativa.html" target="_blank">Normativa</a>
+                    <a class="" href="https://lademoswinglab.es/aviso-legal.html" target="_blank">Aviso legal</a>
+                    <a class="" href="https://lademoswinglab.es/politica-de-privacidad.html" target="_blank">Política de privacidad</a>
+                    <a class="" href="https://lademoswinglab.es/politica-de-cookies.html" target="_blank">Política de cookies</a>    
+            </div>
+            
+
+
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- SimpleLightbox plugin JS-->

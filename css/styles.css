@@ -557,6 +557,32 @@ footer hr.divider{
 
 
 
+/**LEGAL FOOTER**/
+
+.legal-footer{
+  font-family:'Manrope', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2em;
+  font-size: 11px;
+}
+
+
+.legal-footer a{
+  padding: 0 5px;
+}
+
+@media (max-width: 385px) {
+.legal-footer a{
+  width: 50%;
+}
+
+}
+
+/**LEGAL FOOTER**/
+
 
 
 

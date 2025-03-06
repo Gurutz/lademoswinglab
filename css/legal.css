@@ -1,0 +1,25 @@
+footer .legal{
+    margin: 0;
+    width: 100%;
+    font-size: 12px;
+}
+
+.legal{
+    margin: 10rem 3rem;
+    line-height: 28px;
+}
+
+.legal h2{
+    font-size: 23px;
+}
+
+.legal p, .legal li, .legal a{
+    font-size: 14px;
+    font-weight: 100;
+    font-family: Arial, sans-serif;
+}
+
+.legal article{
+    padding-bottom: 2rem;
+}
+

@@ -1,0 +1,10 @@
+# Habilitar el motor de reescritura
+RewriteEngine On
+
+# Reescribir URLs para quitar la extensión .html
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html [L]
+
+# Redirigir las URLs con .html a la versión sin .html (opcional)
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /.*\.html\ HTTP/
+RewriteRule ^(.*)\.html$ /$1 [R=301,L]
