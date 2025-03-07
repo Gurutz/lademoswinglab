@@ -3,11 +3,22 @@
         "img": "assets/img/practica-lademoswing.png",
         "titulo": "Práctica Swing en La Demo",
         "fecha": "Viernes 7 de Marzo de 21:00 a 22:30"
+        
     },
     {
         "img": "assets/img/mañaneo-lademoswing.png",
         "titulo": "Mañaneo en La Demo",
         "fecha": "Sábado 22 de Marzo de 11:00 a 14:30",
-        "link": "https://docs.google.com/forms/d/e/1FAIpQLSfsJ1YtYhwjoNR43IXtVcDUdRgvtINusyQZvzGmAhkutllNqw/closedform"
+        "link": "https://docs.google.com/forms/d/1LxY4rw-r-DDso24xbyDrnc6ODxbJFXyMt6Mg9hoopaA/viewform?edit_requested=true"
+    },
+    {
+        "img": "assets/img/mañaneo-lademoswing.png",
+        "titulo": "Mañaneo en La Demo",
+        "fecha": "Sábado 5 de abril de 11:00 a 14:30"
+    },
+    {
+        "img": "assets/img/practica-lademoswing.png",
+        "titulo": "Práctica Swing en La Demo",
+        "fecha": "Sábado 25 de Abril de 11:00 a 14:30"
     }
 ]

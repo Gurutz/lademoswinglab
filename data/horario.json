@@ -1,0 +1,49 @@
+{
+    "Lunes":{
+        "clases": [
+            {   
+                "time":"",
+                "sala" :"",
+                "name":"",
+                "level":"",
+                "teacher":"",
+                "link": "https://forms.gle/8vadrVYQGSY9q4KdA"
+            },
+            {
+                "time":"18:00-19:00",
+                "sala" :"Alarde",
+                "name":"Solo Jazz",
+                "level":"Iniciación",
+                "teacher":"Julie",
+                "link": "https://forms.gle/8vadrVYQGSY9q4KdA"
+            },
+            {
+                "time":"18:00-19:00",
+                "sala" :"Bambú Danza",
+                "name":"Solo Jazz",
+                "level":"Iniciación",
+                "teacher":"Julie",
+                "link": "https://forms.gle/8vadrVYQGSY9q4KdA" 
+            },
+            {
+                "time":"18:00-19:00",
+                "sala" :"Charivari",
+                "name":"Solo Jazz",
+                "level":"Iniciación",
+                "teacher":"Julie",
+                "link": "https://forms.gle/8vadrVYQGSY9q4KdA"
+            },
+            {
+                "time":"19:00-20:00",
+                "sala" :"Charivari",
+                "name":"Solo Jazz",
+                "level":"Iniciación",
+                "teacher":"Julie",
+                "link": "https://forms.gle/8vadrVYQGSY9q4KdA"
+            }
+        ]
+    }
+
+
+    
+}
