@@ -72,6 +72,8 @@
 #footer{
   position: relative;
   top: 7.5rem;
+  background: url('../assets/img/white-background.png') no-repeat center center !important;
+  background-size: cover !important;
 }
   @media (max-width: 990px) {
     .events-row{

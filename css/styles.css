@@ -282,7 +282,7 @@ header video{
 
 .table-desktop .class-level{
   font-family:'Manrope', sans-serif;
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: #000000 ;
   margin-bottom: 1rem;
 }
@@ -403,6 +403,8 @@ header video{
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  background: url('../assets/img/purpleBg.png') no-repeat center center !important;
+  background-size: cover !important;
 }
 
 .tarifas-responsive{

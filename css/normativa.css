@@ -1,0 +1,18 @@
+.normativa{
+    font-family: Arial, sans-serif;
+    margin: 10rem 3rem;
+    line-height: 28px;
+}
+
+.normativa h2{
+    font-size: 23px;
+}
+
+.normativa p, .normativa li{
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.normativa article{
+    padding-bottom: 2rem;
+}
