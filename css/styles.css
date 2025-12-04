@@ -297,16 +297,78 @@ header video{
   background-color: #D4C5FF !important;
 }
 
+/* clases destacadas desktop */
+
+.destacado {
+    position: relative;
+}
+
+/* Badge general */
+.class-badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #e1ff73;
+    color: #5015FA;
+    font-size: 0.5rem;
+    padding: 1px 3px;
+    border-radius: 4px;
+    font-weight: 600;
+    z-index: 10;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    pointer-events: none;
+}
+
+/* Variantes */
+.clase-libre {
+    background-color: #e1ff73; /* verde */
+}
+
+.nuevo-curso {
+    background-color: #ff9800; /* naranja */
+}
+
+.completo {
+    background-color: #e53935; /* rojo */
+}
 
 
 
+/* clases destacadas mobile */
 
+.destacado-mobile {
+    position: relative;
+}
 
+/* Badge general */
+.class-badge-mobile {
+    position: absolute;
+    /* top: 40px; */
+    /* right: -10px; */
+    background-color: #e1ff73;
+    color: #5015FA;
+    font-size: 0.7rem;
+    padding: 2px 3px;
+    border-radius: 4px;
+    font-weight: 600;
+    z-index: 9;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    pointer-events: none;
+}
 
+/* Posición abajo a la derecha */
+.badge-bottom-right {
+    bottom: 6px;
+    right: 6px;
+}
 
-
-
-
+/* Amarillo destacado */
+.clase-libre-amarillo {
+    background-color: #FFD600;
+    color: #000;
+}
 
 
 

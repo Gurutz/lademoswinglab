@@ -10,7 +10,7 @@
     position: fixed;  /* Absolute positioning for the button */
     bottom: 20px;        /* Distance from the bottom edge */
     right: 20px;         /* Distance from the right edge */
-    z-index: 1;
+    z-index: 10;
 }
 
 .whatsapp-button:hover {
