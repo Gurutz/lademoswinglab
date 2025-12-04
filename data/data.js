@@ -29,21 +29,10 @@ const htmlToJsonEventos = () =>{
 
 const datosEventos = [
     {
-        "img": "assets/img/practica-lademoswing.png",
-        "titulo": "Práctica Social",
-        "fecha": "Viernes 14 noviembre 21:00-22:30"
-    },
-    {
-        "img": "assets/img/web-bianca-nils-en-madrid.png",
-        "titulo": "Bianca&Nils en la Demo",
-        "fecha": "28-30 noviembre",
-        "link": "bianca-y-nils-en-madrid-info-web-la-demo.pdf"
-    },
-    {
         "img": "assets/img/navideña-2025.png",
         "titulo": "La Navideña",
         "fecha": "Sábado 13 Diciembre",
-        "link": "https://www.instagram.com/p/DQ9UP-cAVLV/?img_index=1"
+        "link": "https://www.instagram.com/p/DRMioojDcbs/?igsh=MTF6M25sbHo0Mmp1Mg%3D%3D"
     }
 ]
 
