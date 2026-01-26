@@ -28,12 +28,32 @@ const htmlToJsonEventos = () =>{
 
 
 const datosEventos = [
+
     {
-        "img": "assets/img/navideña-2025.png",
-        "titulo": "La Navideña",
-        "fecha": "Sábado 13 Diciembre",
-        "link": "https://www.instagram.com/p/DRMioojDcbs/?igsh=MTF6M25sbHo0Mmp1Mg%3D%3D"
+        "img": "assets/img/practica-web.png",
+        "titulo": "Práctica en La Demo",
+        "fecha": "Viernes 13 Febrero",
+    },
+    {
+        "img": "assets/img/mañaneo-web.png",
+        "titulo": "Mañaneo y talleres",
+        "fecha": "Sábado 21 Febrero",
+        "link":""
+    },
+    {
+        "img": "assets/img/practica-web.png",
+        "titulo": "Práctica en La Demo",
+        "fecha": "Viernes 6 Marzo",
+        "link": ""
+    },
+    {
+        "img": "assets/img/mañaneo-web.png",
+        "titulo": "Mañaneo y talleres",
+        "fecha": "Sábado 21 Marzo",
+        "link": ""
     }
+
+
 ]
 
 
