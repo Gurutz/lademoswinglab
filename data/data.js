@@ -17,7 +17,8 @@ const htmlToJsonEventos = () =>{
                 img: match[1],
                 titulo: match[2],
                 fecha: match[3],
-                link: match[4]
+                link: match[4],
+                linkExtra: match[5]
             })
         }  
     }); 
@@ -28,32 +29,13 @@ const htmlToJsonEventos = () =>{
 
 
 const datosEventos = [
-
     {
-        "img": "assets/img/practica-web.png",
-        "titulo": "Práctica en La Demo",
-        "fecha": "Viernes 13 Febrero",
-    },
-    {
-        "img": "assets/img/mañaneo-web.png",
-        "titulo": "Mañaneo y talleres",
-        "fecha": "Sábado 21 Febrero",
-        "link":""
-    },
-    {
-        "img": "assets/img/practica-web.png",
-        "titulo": "Práctica en La Demo",
-        "fecha": "Viernes 6 Marzo",
-        "link": ""
-    },
-    {
-        "img": "assets/img/mañaneo-web.png",
-        "titulo": "Mañaneo y talleres",
-        "fecha": "Sábado 21 Marzo",
-        "link": ""
+        "img": "assets/img/web-bianca-nils.png",
+        "titulo": "Workshop con Bianca y Nils en Madrid",
+        "fecha": "Sábado 27-29 de Noviembre 2026",
+        "link": "https://tally.so/r/Y5qylN",
+        "linkExtra": "assets/img/bianca-nils-web.pdf"
     }
-
-
 ]
 
 
@@ -65,9 +47,15 @@ const generarHtml =()=>{
         const article = document.createElement("article")
         article.classList.add("events-row");
         const link = evento.link ? `
-            <div>
-                <a target="_blank" class="sign-button" href="${evento.link}">Más información</a>
-            </div>
+            <span>
+                <a target="_blank" class="sign-button" href="${evento.link}">Apúntate</a>
+            </span>
+            ` : "";
+        
+        const linkExtra = evento.linkExtra ? `
+            <span>
+                <a target="_blank" class="sign-button" href="${evento.linkExtra}">Horario</a>
+            </span>
             ` : "";
 
         const eventoHtml = `
@@ -78,7 +66,8 @@ const generarHtml =()=>{
                 <h2>${evento.titulo}</h2>
                 <div class="divider"></div>
                 <p>${evento.fecha}</p>
-                ${link}
+                <p>${link}${linkExtra}</p>
+            
             </div>
             
         `;

@@ -177,7 +177,6 @@ header video{
 }
 
 .aprende{
-  text-transform: uppercase;
   position: relative;
   top: 8rem;
   z-index: 2;
@@ -234,6 +233,7 @@ header video{
 
 .table-desktop{
   width: 100%;
+  margin-bottom: 3rem
 }
 
 .table-desktop th, .table-desktop td{
@@ -460,34 +460,210 @@ header video{
 
 /*-----TARIFAS-----*/
 
-.tarifas{
+.tarifas-desktop{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0;
+  padding: 0;
+}
+
+/* A partir de 1400px usar 4 columnas para que las 4 tarjetas ocupen todo el ancho */
+@media (min-width: 1400px) {
+  .tarifas-desktop{
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.tarjeta-precio{
+  border-radius: 0.25rem;
+  padding: 2rem;
+  background-color: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  position: relative;
+  min-height: 400px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+}
+
+.tarjeta-precio.tarjeta-destacada{
+  background: linear-gradient(135deg, #E6FF93 0%, #D4FF66 100%);
+  border: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Fondos específicos para las tarjetas 2, 3 y 4 (desktop & responsive) */
+.tarifas-desktop .tarjeta-precio:nth-child(2),
+.tarifas-responsive .tarjeta-precio:nth-child(2){
+  background-color: #F5F5F5;
+}
+
+.tarifas-desktop .tarjeta-precio:nth-child(3),
+.tarifas-responsive .tarjeta-precio:nth-child(3){
+  background-color: #E4E4FF;
+}
+
+.tarifas-desktop .tarjeta-precio:nth-child(4),
+.tarifas-responsive .tarjeta-precio:nth-child(4){
+  background-color: #AAAAFF;
+}
+
+.badge-oferta{
+  position: absolute;
+  top: -12px;
+  right: 20px;
+  background-color: #9C27B0;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.titulo-tarjeta{
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #000000;
+  font-family: 'kaftan_serif_-_trialregular', Arial, sans-serif;
+}
+
+.features-list{
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+  flex-grow: 1;
+}
+
+.features-list li{
+  display: flex;
   align-items: center;
-  background: url('../assets/img/purpleBg.png') no-repeat center center !important;
-  background-size: cover !important;
+  margin-bottom: 0.75rem;
+  font-size: 0.8rem;
+  font-family: 'Manrope', sans-serif;
+  color: #333333;
+}
+
+.checkmark{
+  color: #4CAF50;
+  font-weight: bold;
+  margin-right: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.precio-container{
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.precio-grande{
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-family: 'kaftan_serif_-_trialregular', Arial, sans-serif;
+  color: #000000 !important;
+}
+
+.precio-periodo{
+  font-size: 0.80rem;
+  color: #000000;
+}
+
+.precio-alternativo{
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.precio-numero{
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #000000;
+}
+
+.precio-periodo-alt{
+  font-size: 0.80rem;
+  color: #000000;
+}
+
+.nota-precio{
+  font-size: 0.6rem;
+  color: #999999;
+  margin: 0;
 }
 
 .tarifas-responsive{
   display: none;
 }
 
-.tarifas .divider{
-  -webkit-transform: rotate(-90deg); 
-  -moz-transform: rotate(-90deg);
-}
-
-.tarifas h2, .tarifas .precio, .tarifas-responsive h2, .tarifas-responsive .precio{
-  font-family: 'kaftan_serif_-_trialregular', Arial, sans-serif;
-}
-
-.horario, .tarifas{
+.horario{
   border: 3px solid black;
 }
 
-.precio{
-  font-size: 2rem;
+/* Responsive: 4 columnas en tablets grandes */
+@media (max-width: 1400px) {
+  .tarifas-desktop{
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.7rem;
+  }
+}
+
+/* Responsive: 3 columnas en tablets */
+@media (max-width: 1024px) {
+  .tarifas-desktop{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+}
+
+/* Responsive: 2 columnas en tablets pequeñas */
+@media (max-width: 768px) {
+  .tarifas-desktop{
+    display: none;
+  }
+
+  .tarifas-responsive{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 2rem 0;
+    padding: 0;
+  }
+  
+  .tarifas-responsive h2{
+    grid-column: 1 / -1;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Responsive: 1 columna en móviles */
+@media (max-width: 576px) {
+  .tarifas-responsive{
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .tarjeta-precio{
+    min-height: auto;
+    padding: 1.5rem;
+  }
+
+  .titulo-tarjeta{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .precio-grande{
+    font-size: 2rem;
+  }
+
+  .features-list li{
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
 }
 
 /*.lindy-hop, .solo-jazz, .equipo{
@@ -542,7 +718,7 @@ footer hr.divider{
   width: 28px;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 600px){
   #navbarResponsive{
     justify-content: space-between;
   }
@@ -564,14 +740,23 @@ footer hr.divider{
     display: flex;
   }
 
-  .tarifas{
+  .tarifas-desktop{
     display: none;
   }
 
   .tarifas-responsive{
-    display: flex;
-    flex-direction: column;
-    border: 3px solid black;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.7rem;
+  }
+  
+  .tarifas-responsive h2{
+    grid-column: 1 / -1;
+    margin-bottom: 1rem;
+  }
+  
+  .tarifas-responsive .tarjeta-precio.tarjeta-destacada{
+    transform: scale(1);
   }
 }
 
@@ -580,8 +765,32 @@ footer hr.divider{
     width: 100%;
   }
 
-  .tarifas p, .tarifas h2{
+  .tarifas-responsive h2{
+    color: #ffffff;
+    text-transform: uppercase;
     text-align: left;
+    font-weight: 500;
+    font-size: 2.35rem;
+    line-height: 1.2;
+    margin: 0 0 1rem 0;
+    position: static;
+    top: auto;
+    font-family: var(--bs-body-font-family);
+  }
+
+  .tarifas-responsive p{
+    text-align: left;
+  }
+
+  /* Ensure the schedule section leaves space before tarifas */
+  .horario{
+    margin-bottom: 2rem;
+  }
+
+  /* Match responsive cards margin to .horario */
+  .tarifas-responsive{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
   .horario h2{
@@ -8462,7 +8671,7 @@ textarea.form-control-lg {
 
 .bg-white {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important;
+  background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity));
 }
 
 .bg-body {
