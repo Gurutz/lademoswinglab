@@ -1,49 +1,39 @@
 {
-    "Lunes":{
-        "clases": [
-            {   
-                "time":"",
-                "sala" :"",
-                "name":"",
-                "level":"",
-                "teacher":"",
-                "link": "https://forms.gle/8vadrVYQGSY9q4KdA"
-            },
-            {
-                "time":"18:00-19:00",
-                "sala" :"Alarde",
-                "name":"Solo Jazz",
-                "level":"Iniciación",
-                "teacher":"Julie",
-                "link": "https://forms.gle/8vadrVYQGSY9q4KdA"
-            },
-            {
-                "time":"18:00-19:00",
-                "sala" :"Bambú Danza",
-                "name":"Solo Jazz",
-                "level":"Iniciación",
-                "teacher":"Julie",
-                "link": "https://forms.gle/8vadrVYQGSY9q4KdA" 
-            },
-            {
-                "time":"18:00-19:00",
-                "sala" :"Charivari",
-                "name":"Solo Jazz",
-                "level":"Iniciación",
-                "teacher":"Julie",
-                "link": "https://forms.gle/8vadrVYQGSY9q4KdA"
-            },
-            {
-                "time":"19:00-20:00",
-                "sala" :"Charivari",
-                "name":"Solo Jazz",
-                "level":"Iniciación",
-                "teacher":"Julie",
-                "link": "https://forms.gle/8vadrVYQGSY9q4KdA"
-            }
-        ]
-    }
-
-
-    
+  "enlace_inscripcion": "https://tally.so/r/aQzyR2?utm_source=web&utm_medium=organic&utm_campaign=curso_26_27",
+  "colores_curso_nuevo": {"Lindy Hop": "#F3FFD1", "Solo Jazz": "#EBEBFF", "Shag": "#EAFFFA", "Movimiento consciente": "#CCFFF5"},
+  "color_curso_nuevo_por_defecto": "#F3FFD1",
+  "clases": [
+    {"dia": "Lunes", "inicio": "18:00", "fin": "19:00", "nombre": "Solo Jazz", "nivel": "Principiantes 1", "profes": "Julie"},
+    {"dia": "Lunes", "inicio": "19:00", "fin": "20:00", "nombre": "Solo Jazz", "nivel": "Principiantes 3", "profes": "Julie"},
+    {"dia": "Lunes", "inicio": "19:00", "fin": "20:00", "nombre": "Lindy Hop", "nivel": "Entrenamiento", "profes": "Aiala & Gurutz", "nuevo": true, "color": "#EBFFAA"},
+    {"dia": "Lunes", "inicio": "20:00", "fin": "21:00", "nombre": "Lindy Hop", "nivel": "Principiantes 2", "profes": "Aiala & Julie"},
+    {"dia": "Lunes", "inicio": "20:00", "fin": "21:00", "nombre": "Lindy Hop", "nivel": "Intermedio 2", "profes": "Ross & Gurutz"},
+    {"dia": "Lunes", "inicio": "21:00", "fin": "22:00", "nombre": "Solo Jazz", "nivel": "Intermedio", "profes": "Ross"},
+    {"dia": "Lunes", "inicio": "21:00", "fin": "22:00", "nombre": "Lindy Hop", "nivel": "Principiantes 1", "profes": "Aiala & Gurutz"},
+    {"dia": "Martes", "inicio": "18:00", "fin": "19:00", "nombre": "Lindy Hop", "nivel": "Iniciación", "profes": "Aiala & Julie", "nuevo": true},
+    {"dia": "Martes", "inicio": "19:00", "fin": "20:00", "nombre": "Solo Jazz", "nivel": "Master", "profes": "Ari"},
+    {"dia": "Martes", "inicio": "19:00", "fin": "20:00", "nombre": "Lindy Hop", "nivel": "Principiantes 3", "profes": "Julie & Ross"},
+    {"dia": "Martes", "inicio": "20:00", "fin": "21:00", "nombre": "Lindy Hop", "nivel": "Master", "profes": "Aiala & Gurutz"},
+    {"dia": "Martes", "inicio": "20:00", "fin": "21:00", "nombre": "Solo Jazz", "nivel": "Intermedio", "profes": "Ari", "nuevo": true, "color": "#DCDCFD"},
+    {"dia": "Martes", "inicio": "20:00", "fin": "21:00", "nombre": "Movimiento consciente", "nivel": "Multinivel", "profes": "Ross", "nuevo": true},
+    {"dia": "Martes", "inicio": "21:00", "fin": "22:00", "nombre": "Lindy Hop", "nivel": "Avanzado", "profes": "Aiala & Gurutz"},
+    {"dia": "Martes", "inicio": "21:00", "fin": "22:00", "nombre": "Lindy Hop", "nivel": "Iniciación", "profes": "Ross & Javi", "nuevo": true},
+    {"dia": "Martes", "inicio": "21:00", "fin": "22:00", "nombre": "Shag", "nivel": "Iniciación", "profes": "Xulia & Pina", "nuevo": true},
+    {"dia": "Miércoles", "inicio": "18:00", "fin": "19:00", "nombre": "Solo Jazz", "nivel": "Principiantes 1", "profes": "Gurutz"},
+    {"dia": "Miércoles", "inicio": "19:00", "fin": "20:00", "nombre": "Lindy Hop", "nivel": "Avanzado", "profes": "Aiala & Gurutz"},
+    {"dia": "Miércoles", "inicio": "19:00", "fin": "20:00", "nombre": "Lindy Hop", "nivel": "Principiantes 2", "profes": "Ross & Xulia"},
+    {"dia": "Miércoles", "inicio": "20:00", "fin": "21:00", "nombre": "Solo Jazz", "nivel": "Avanzado", "profes": "Ross"},
+    {"dia": "Miércoles", "inicio": "20:00", "fin": "21:00", "nombre": "Lindy Hop", "nivel": "Intermedio 1 - classic", "profes": "Aiala & Javi"},
+    {"dia": "Miércoles", "inicio": "21:00", "fin": "22:00", "nombre": "Lindy Hop", "nivel": "Principiantes 3", "profes": "Ross & Javi"},
+    {"dia": "Miércoles", "inicio": "21:00", "fin": "22:00", "nombre": "Solo Jazz", "nivel": "Iniciación", "profes": "Aiala", "nuevo": true},
+    {"dia": "Jueves", "inicio": "19:00", "fin": "20:00", "nombre": "Solo Jazz", "nivel": "Principiantes 3", "profes": "Aiala"},
+    {"dia": "Jueves", "inicio": "19:00", "fin": "20:00", "nombre": "Lindy Hop", "nivel": "Principiantes 1", "profes": "Ross & Gurutz"},
+    {"dia": "Jueves", "inicio": "19:00", "fin": "20:00", "nombre": "Solo Jazz", "nivel": "Iniciación", "profes": "Julie", "nuevo": true},
+    {"dia": "Jueves", "inicio": "20:00", "fin": "21:00", "nombre": "Lindy Hop", "nivel": "Avanzado +", "profes": "Aiala & Gurutz"},
+    {"dia": "Jueves", "inicio": "20:00", "fin": "21:00", "nombre": "Lindy Hop", "nivel": "Intermedio 1 - birol", "profes": "Ross & Julie"},
+    {"dia": "Jueves", "inicio": "21:00", "fin": "22:00", "nombre": "Lindy Hop", "nivel": "Intermedio 2 - Birol", "profes": "Gurutz & Julie"},
+    {"dia": "Viernes", "inicio": "19:00", "fin": "20:00", "nombre": "Solo Jazz", "nivel": "Iniciación", "profes": "Aida", "nuevo": true},
+    {"dia": "Viernes", "inicio": "19:00", "fin": "20:00", "nombre": "Lindy Hop", "nivel": "Iniciación", "profes": "Julie & Laura", "nuevo": true},
+    {"dia": "Viernes", "inicio": "20:00", "fin": "21:00", "nombre": "Lindy Hop", "nivel": "Principiantes 3", "profes": "Laura & Julie"}
+  ]
 }

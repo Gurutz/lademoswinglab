@@ -30,11 +30,22 @@ const htmlToJsonEventos = () =>{
 
 const datosEventos = [
     {
+        "img": "assets/img/mañaneo-web.png",
+        "titulo": "Mañaneo en La Demo",
+        "fecha": "Sábado 31 de Octubre de 11:00 a 14:30 ",
+        "link": "https://tally.so/r/QKgaNp?utm_source=web&utm_medium=organic&utm_campaign=curso_26_27"
+    },
+    {
+        "img": "assets/img/practica-web.png",
+        "titulo": "Práctica en la Demo",
+        "fecha": "Viernes 6 de Noviembre de 21:00 a 22:30 ",
+    },
+    {
         "img": "assets/img/web-bianca-nils.png",
         "titulo": "Workshop con Bianca y Nils en Madrid",
         "fecha": "Sábado 27-29 de Noviembre 2026",
-        "link": "https://tally.so/r/Y5qylN",
-        "linkExtra": "assets/img/bianca-nils-web.pdf"
+        "link": "https://tally.so/r/xXK2vG?utm_source=web&utm_medium=organic&utm_campaign=curso_26_27",
+        "linkExtra": "assets/img/bianca-nils-web (1).pdf"
     }
 ]
 
