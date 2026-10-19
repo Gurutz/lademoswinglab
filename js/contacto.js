@@ -10,15 +10,15 @@
 
     const status = document.getElementById('contactoStatus');
     const submitButton = form.querySelector('button[type="submit"]');
+    const submitLabel = submitButton.innerHTML;
 
     // Preseleccionar el motivo si se llega desde otra página (ej. contacto.html?motivo=salas)
     const params = new URLSearchParams(window.location.search);
     const motivo = params.get('motivo');
-    const motivoSelect = form.querySelector('#motivo');
-    if (motivo && motivoSelect) {
-        const option = motivoSelect.querySelector('option[data-key="' + motivo + '"]');
+    if (motivo) {
+        const option = form.querySelector('input[name="motivo"][data-key="' + motivo + '"]');
         if (option) {
-            motivoSelect.value = option.value;
+            option.checked = true;
         }
     }
     if (params.get('enviado') === '1') {
@@ -65,7 +65,7 @@
             })
             .finally(function () {
                 submitButton.disabled = false;
-                submitButton.textContent = 'Enviar';
+                submitButton.innerHTML = submitLabel;
             });
     });
 })();
