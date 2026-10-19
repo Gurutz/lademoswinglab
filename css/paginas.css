@@ -306,3 +306,312 @@
         justify-content: center;
     }
 }
+
+/* ---------- Eventos ---------- */
+
+.eventos-intro {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 640px;
+    margin-top: 1.5rem;
+}
+
+.eventos-section {
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+}
+
+.eventos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+}
+
+.evento-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #0e0e0e;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 1.25rem;
+    overflow: hidden;
+    transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.evento-card:hover {
+    transform: translateY(-4px);
+    border-color: #D4C5FF;
+}
+
+.evento-img {
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+}
+
+.evento-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.evento-card:hover .evento-img img {
+    transform: scale(1.03);
+}
+
+.evento-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1.5rem 1.5rem 1.75rem;
+}
+
+.evento-fecha {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    align-self: flex-start;
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.85rem;
+    color: #000;
+    background-color: #D4C5FF;
+    border-radius: 2rem;
+    padding: 0.35rem 0.85rem;
+    margin-bottom: 1rem;
+}
+
+.evento-body h2 {
+    font-family: 'kaftan_serif_-_trialregular', Arial, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    color: #fff;
+    margin-bottom: 1.25rem;
+}
+
+.evento-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: auto;
+}
+
+.evento-btn {
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.92rem;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 2rem;
+    padding: 0.55rem 1.25rem;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.evento-btn:hover {
+    color: #000;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.evento-btn-primary {
+    font-weight: 600;
+    color: #000;
+    background-color: #D4C5FF;
+    border-color: #D4C5FF;
+}
+
+/* ---------- La escuela ---------- */
+
+.escuela-hero {
+    position: relative;
+    height: 90vh;
+    min-height: 32rem;
+    max-height: 56rem;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.escuela-hero video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.escuela-hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.25) 55%, rgba(0, 0, 0, 0.45) 100%);
+}
+
+.escuela-hero-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 4rem;
+    z-index: 1;
+}
+
+.escuela-hero-content h1 {
+    font-size: calc(2.8rem + 2.5vw);
+    margin-bottom: 0.75rem;
+}
+
+.escuela-hero-content p {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.2rem;
+    color: #fff;
+    max-width: 560px;
+}
+
+.escuela-hero-arrow img {
+    height: 3.5rem;
+    margin-top: 1rem;
+    margin-left: -10px;
+}
+
+.escuela-section {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.escuela-title {
+    margin-bottom: 3.5rem;
+}
+
+.escuela-tag {
+    display: inline-block;
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #000;
+    background-color: #D4C5FF;
+    border-radius: 2rem;
+    padding: 0.35rem 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.baile {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+    gap: 4rem;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+
+.baile-reverse .baile-img {
+    order: 2;
+}
+
+.baile-img img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 1.25rem;
+    display: block;
+}
+
+.baile-text h2 {
+    font-size: calc(2.2rem + 1.5vw);
+    line-height: 1;
+    margin-bottom: 1.5rem;
+}
+
+.baile-text p {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.escuela-cta {
+    text-align: center;
+}
+
+.escuela-equipo {
+    background-color: #D4C5FF;
+    color: #000;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.escuela-equipo .escuela-title {
+    color: #000;
+}
+
+.equipo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 2rem;
+}
+
+.profe img {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border-radius: 1rem;
+    display: block;
+    margin-bottom: 1.25rem;
+}
+
+.profe h3 {
+    font-family: 'kaftan_serif_-_trialregular', Arial, sans-serif;
+    font-size: 1.6rem;
+    color: #000;
+    margin-bottom: 0.75rem;
+}
+
+.profe p {
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.92rem;
+    line-height: 1.65;
+    color: #000 !important;
+}
+
+@media (max-width: 1199px) {
+    .eventos-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .equipo-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2.5rem 2rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .baile {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    .baile-reverse .baile-img {
+        order: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .eventos-grid,
+    .equipo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .escuela-section,
+    .escuela-equipo {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .escuela-title {
+        margin-bottom: 2rem;
+    }
+
+    .escuela-hero-content {
+        bottom: 2.5rem;
+    }
+}

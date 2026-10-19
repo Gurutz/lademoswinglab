@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -25,10 +25,10 @@
         <!-- SimpleLightbox plugin CSS-->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/eventos.css" rel="stylesheet" >
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/stylesheet.css" rel="stylesheet" />
         <link href="css/whatsapp.css" rel="stylesheet" />
+        <link href="css/paginas.css" rel="stylesheet" />
 
         <!-- DATA.JSON -->
         <script src="./data/data.js" defer></script>
@@ -82,18 +82,18 @@
         </nav>
 
         <!-- header-->
-        <header class="container-fluid bg-black my-5 w-100">
+        <header class="container-fluid bg-black page-header w-100">
             <div class="gx-4 gx-lg-5 px-4 px-lg-5">
-                    <div class="row d-flex justify-content-start">
-                        <h1 class="aprende text-white">Talleres y eventos</h1>
-                    </div>
+                <div class="row d-flex justify-content-start">
+                    <h1 class="col-12 col-lg-8 text-white text-uppercase">Talleres y eventos</h1>
+                </div>
+                <p class="eventos-intro">Mañaneos, prácticas, workshops con profes invitados… Todo lo que pasa en La Demo, más allá de las clases semanales.</p>
             </div>
         </header>
-        <main class="cards-grid events">     
-            <div id="events">
-                
-
-            </div> 
+        <main class="container-fluid bg-black w-100 eventos-section">
+            <div class="gx-4 gx-lg-5 px-4 px-lg-5">
+                <div id="events" class="eventos-grid"></div>
+            </div>
         </main>
       
 
