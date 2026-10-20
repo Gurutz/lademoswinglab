@@ -3,14 +3,14 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="Alquiler de salas en Madrid. Espacios perfectos para eventos, talleres y celebraciones. Disponibles en el corazón de Madrid." />
+        <meta name="description" content="Alquiler de salas de baile en el centro de Madrid para clases, ensayos, producciones y eventos. Suelo de tarima, espejos y equipo de sonido." />
         <meta name="author" content="La Demo Swing Lab" />
         <meta http-equiv="Expires" content="0">
         <meta http-equiv="Last-Modified" content="0">
         <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
         <meta http-equiv="Pragma" content="no-cache">
-        <link rel="canonical" href="https://lademoswinglab.es">
-        <title>Alquiler de Salas - La Demo Swing Lab</title>
+        <link rel="canonical" href="https://lademoswinglab.es/alquiler-salas">
+        <title>Alquiler de salas - La Demo Swing Lab</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
         <!-- Bootstrap Icons-->
@@ -20,17 +20,17 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         
         <!-- SimpleLightbox plugin CSS-->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/eventos.css" rel="stylesheet" >
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/stylesheet.css" rel="stylesheet" />
-        <link href="css/alquiler-salas.css" rel="stylesheet" />
         <link href="css/whatsapp.css" rel="stylesheet" />
         <link href="css/menu.css" rel="stylesheet" />
+        <link href="css/banner_cookies.css" rel="stylesheet"/>
+        <link href="css/legal.css" rel="stylesheet"/>
+        <link href="css/paginas.css" rel="stylesheet"/>
 
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-WN1PSY6X3K"></script>
@@ -41,12 +41,49 @@
 
         gtag('config', 'G-WN1PSY6X3K');
         </script>
+        <!-- Meta Pixel Code -->
+        <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '582796100038733');
+        fbq('track', 'PageView');
+        </script>
+            <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=582796100038733&ev=PageView&noscript=1"
+        /></noscript>
+        <!-- End Meta Pixel Code -->
+        <!-- DATA.JSON -->
+        <!-- <script src="./data/dataHorarios.js"></script> -->
+
+
 
     </head>
     <body id="page-top" class="bg-black">
+
+        <!-- Cookie Banner -->
+        <div id="cb-cookie-banner" class="alert alert-dark text-center mb-0" role="alert">
+            <p>Las cookies de este sitio web se usan para personalizar el contenido y analizar el tráfico.🍪 </p>
+            <a href="https://lademoswinglab.es/politica-de-cookies.html" target="blank">Saber más</a>
+            <button type="button" class="btn btn-primary btn-sm ms-3" onclick="window.hideCookieBanner()">
+            OK
+            </button>
+        </div>
+        <!-- End of Cookie Banner -->
+
+
+        <!---whatsapp-->
         <a href="https://wa.me/+34660942608" target="_blank" class="whatsapp-button">
             <i class="fa fa-whatsapp"></i>
         </a>
+        <!---end of whatsapp-->
+
+
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top gx-4 gx-lg-5 px-4 px-lg-5 py-3 w-100" id="mainNav">
             <div class="container-fluid w-100">
@@ -75,46 +112,234 @@
                         <li class="nav-item"><a class="nav-link text-white" href="contacto.html">Contacto</a></li>
                     </ul>
                     <form class="form-inline my-2 ml-lg-4 my-lg-0">
-                        <a class="btn btn-outline-white" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeZlOQEkhZmuihl_4cGMrabfHBYa1Yi7Xvc1VMz0PwqsZ8h4Q/viewform">Apúntate</a>
+                        <a class="btn btn-outline-white" target="_blank" href="https://tally.so/r/aQzyR2?utm_source=web&utm_medium=organic&utm_campaign=curso_26_27">Apúntate</a>
                     </form>
                 </div>
             </div>
         </nav>
 
-        <!-- Alquiler de salas -->
-        <main class="salas">
-            <div class="salas-inner">
-                <div class="salas-info">
-                    <h1 class="salas-title">Alquila salas y espacios</h1>
-                    <p class="salas-text">250 m² pensados para moverse, crear y compartir. Tres salas de 50 m² que pueden transformarse en un solo salón diáfano con equipo de música instalado.</p>
-                    <a class="salas-btn" href="mailto:hola@lademoswinglab.es?subject=Alquiler%20de%20salas">Más info</a>
-                    <div class="salas-arrows">
-                        <button class="salas-arrow" type="button" data-dir="-1" aria-label="Anterior"><i class="bi bi-chevron-left"></i></button>
-                        <button class="salas-arrow" type="button" data-dir="1" aria-label="Siguiente"><i class="bi bi-chevron-right"></i></button>
+        <!-- header-->
+        <header class="container-fluid bg-black salas-hero w-100">
+            <div class="gx-4 gx-lg-5 px-4 px-lg-5">
+                <div class="salas-hero-grid">
+                    <div class="salas-hero-text">
+                        <h1 class="text-white text-uppercase titulo-acento">Alquiler de <span class="acento">salas</span></h1>
+                        <p class="salas-hero-lead">Para clases, ensayos, producciones y eventos de baile en pleno centro de Madrid.</p>
+                        <div class="salas-hero-actions">
+                            <a class="btn-pill btn-pill-primary" href="#reserva">Pide disponibilidad <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+                            <a class="btn-pill" href="https://wa.me/+34660942608" target="_blank"><i class="bi bi-whatsapp" aria-hidden="true"></i> WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="salas-hero-img">
+                        <img src="assets/img/alquiler-salas/web/foto-sala-1.jpg" alt="Sala diáfana con espejos y suelo de tarima en La Demo Swing Lab">
                     </div>
                 </div>
+            </div>
+        </header>
 
-                <!-- TODO: cambiar fotos de ejemplo -->
-                <div class="salas-slider" id="salasSlider">
-                    <figure class="sala-card">
-                        <img src="assets/img/P1130921.jpg" alt="Tres salas de 50 m2 - La Demo Swing Lab">
-                        <figcaption>3 salas de 50m2</figcaption>
-                    </figure>
-                    <figure class="sala-card">
-                        <img src="assets/img/practica.png" alt="Sala diáfana de 150 m2 - La Demo Swing Lab">
-                        <figcaption>Sala diáfana de 150m2</figcaption>
-                    </figure>
-                    <figure class="sala-card">
-                        <img src="assets/img/la-demo-swing-lab-lindyhop.jpg" alt="Equipo de música - La Demo Swing Lab">
-                        <figcaption>Equipo de música instalado</figcaption>
-                    </figure>
-                    <figure class="sala-card">
-                        <img src="assets/img/la-demo-swing-lab-equipo.jpg" alt="Suelo de madera y espejos - La Demo Swing Lab">
-                        <figcaption>Suelo de madera y espejos</figcaption>
-                    </figure>
+        <!-- datos rápidos -->
+        <!-- TODO: revisar los metros (en versiones anteriores ponía 185 m² y 250 m²) -->
+        <section class="container-fluid bg-gris salas-datos w-100" aria-label="El espacio en cifras">
+            <div class="gx-4 gx-lg-5 px-4 px-lg-5">
+                <ul class="salas-datos-list">
+                    <li><strong>3</strong><span>salas</span></li>
+                    <li><strong>50 m²</strong><span>cada sala</span></li>
+                    <li><strong>150 m²</strong><span>con las 3 salas unidas</span></li>
+                    <li><strong>Centro</strong><span>Tirso de Molina · Sol</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- usos -->
+        <section class="container-fluid bg-black escuela-section w-100" id="usos">
+            <div class="gx-4 gx-lg-5 px-4 px-lg-5">
+                <h1 class="text-white text-uppercase escuela-title titulo-acento">Un espacio para <span class="acento">moverse</span></h1>
+                <div class="usos-grid">
+                    <article class="uso-card">
+                        <i class="bi bi-people" aria-hidden="true"></i>
+                        <h2>Clases</h2>
+                        <p>Clases regulares o puntuales de baile, yoga, pilates, teatro… en un espacio amplio y luminoso.</p>
+                    </article>
+                    <article class="uso-card">
+                        <i class="bi bi-music-note-beamed" aria-hidden="true"></i>
+                        <h2>Ensayos</h2>
+                        <p>Prepara tu coreografía o tu función con espejo, buen suelo y tu propia música.</p>
+                    </article>
+                    <article class="uso-card">
+                        <i class="bi bi-camera-video" aria-hidden="true"></i>
+                        <h2>Producciones</h2>
+                        <p>Grabaciones, sesiones de fotos o videoclips en un espacio diáfano y versátil.</p>
+                    </article>
+                    <article class="uso-card">
+                        <i class="bi bi-stars" aria-hidden="true"></i>
+                        <h2>Eventos de baile</h2>
+                        <p>Talleres, prácticas, intensivos o fiestas, uniendo salas si necesitas más espacio.</p>
+                    </article>
                 </div>
             </div>
-        </main>
+        </section>
+
+        <!-- equipamiento -->
+        <section class="container-fluid seccion-clara escuela-section w-100" id="equipamiento">
+            <div class="gx-4 gx-lg-5 px-4 px-lg-5">
+                <div class="equipamiento">
+                    <div>
+                        <h1 class="text-uppercase escuela-title titulo-acento">Todas las salas <span class="acento">cuentan con</span></h1>
+                        <ul class="equipamiento-list">
+                    <li><i class="bi bi-grid-3x3-gap" aria-hidden="true"></i><span>Suelo de tarima</span></li>
+                    <li><i class="bi bi-speaker" aria-hidden="true"></i><span>Equipo de sonido</span></li>
+                    <li><i class="bi bi-aspect-ratio" aria-hidden="true"></i><span>Espejo</span></li>
+                    <li><i class="bi bi-wind" aria-hidden="true"></i><span>Extracción de aire</span></li>
+                    <li><i class="bi bi-thermometer-half" aria-hidden="true"></i><span>Aire acondicionado y calefacción</span></li>
+                        </ul>
+                    </div>
+                    <div class="equipamiento-unir">
+                        <img src="assets/img/alquiler-salas/web/alquiler-salas-gente-1.jpg" alt="Clase con las salas unidas en La Demo Swing Lab" loading="lazy">
+                        <div class="equipamiento-unir-text">
+                            <h2>¿Necesitas más espacio?</h2>
+                            <p>Puedes unir las 3 salas para formar un único espacio diáfano, ideal para eventos o clases más grandes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- galería -->
+        <section class="container-fluid bg-black escuela-section w-100" id="galeria">
+            <div class="gx-4 gx-lg-5 px-4 px-lg-5">
+                <h1 class="text-white text-uppercase escuela-title titulo-acento">El <span class="acento">espacio</span></h1>
+                <div class="salas-galeria">
+                    <a class="galeria-item galeria-item-1" href="assets/img/alquiler-salas/web/foto-sala-1.jpg">
+                        <img src="assets/img/alquiler-salas/web/foto-sala-1.jpg" alt="Sala diáfana con espejos y suelo de tarima" loading="lazy">
+                    </a>
+                    <a class="galeria-item galeria-item-2" href="assets/img/alquiler-salas/web/alquiler-salas-gente-1.jpg">
+                        <img src="assets/img/alquiler-salas/web/alquiler-salas-gente-1.jpg" alt="Clase de baile en una de las salas" loading="lazy">
+                    </a>
+                    <a class="galeria-item galeria-item-3" href="assets/img/alquiler-salas/web/foto-sala-2.jpg">
+                        <img src="assets/img/alquiler-salas/web/foto-sala-2.jpg" alt="Sala de baile de La Demo Swing Lab" loading="lazy">
+                    </a>
+                    <a class="galeria-item galeria-item-4" href="assets/img/alquiler-salas/web/foto-sala-3.jpg">
+                        <img src="assets/img/alquiler-salas/web/foto-sala-3.jpg" alt="Sala con espejo y equipo de sonido" loading="lazy">
+                    </a>
+                    <a class="galeria-item galeria-item-5" href="assets/img/alquiler-salas/web/alquiler-salas-gente-2.jpg">
+                        <img src="assets/img/alquiler-salas/web/alquiler-salas-gente-2.jpg" alt="Grupo bailando en la sala" loading="lazy">
+                    </a>
+                    <a class="galeria-item galeria-item-6" href="assets/img/alquiler-salas/web/foto-pasillo.jpg">
+                        <img src="assets/img/alquiler-salas/web/foto-pasillo.jpg" alt="Pasillo de acceso a las salas" loading="lazy">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ubicación -->
+        <section class="container-fluid bg-gris escuela-section w-100" id="ubicacion">
+            <div class="gx-4 gx-lg-5 px-4 px-lg-5">
+                <div class="ubicacion">
+                    <div class="ubicacion-text">
+                        <h1 class="text-white text-uppercase escuela-title titulo-acento">Dónde <span class="acento">estamos</span></h1>
+                        <ul class="contacto-datos">
+                            <li>
+                                <i class="bi bi-geo-alt" aria-hidden="true"></i>
+                                <div><span>Dirección</span><a href="https://goo.gl/maps/6hA5MYiVd1mHRQhS9" target="_blank">C/Magdalena 7 Bajo - Madrid</a></div>
+                            </li>
+                            <li>
+                                <i class="bi bi-signpost-split" aria-hidden="true"></i>
+                                <div><span>Metro</span><p class="ubicacion-metro">Tirso de Molina · Sol</p></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ubicacion-map">
+                        <iframe src="https://www.google.com/maps?q=Calle+de+la+Magdalena+7,+28012+Madrid&output=embed"
+                            title="Mapa de La Demo Swing Lab, C/Magdalena 7, Madrid" loading="lazy" allowfullscreen
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- contacto para alquilar -->
+        <section class="container-fluid bg-black w-100 contacto-section contacto-home" id="reserva">
+            <div class="gx-4 gx-lg-5 px-4 px-lg-5">
+                <h1 class="text-white text-uppercase escuela-title titulo-acento">Reserva tu <span class="acento">sala</span></h1>
+                <div class="contacto-layout">
+                    <aside class="contacto-aside">
+                        <p class="contacto-intro">Cuéntanos qué actividad quieres hacer, qué días y horario necesitas y cuántas personas sois. Te respondemos con disponibilidad y tarifas.</p>
+                        <ul class="contacto-datos">
+                            <li>
+                                <i class="bi bi-envelope" aria-hidden="true"></i>
+                                <div><span>Email</span><a href="mailto:hola@lademoswinglab.es?subject=Alquiler%20de%20salas">hola@lademoswinglab.es</a></div>
+                            </li>
+                            <li>
+                                <i class="bi bi-whatsapp" aria-hidden="true"></i>
+                                <div><span>Whatsapp</span><a href="https://wa.me/+34660942608" target="_blank">660 94 26 08</a></div>
+                            </li>
+                        </ul>
+                    </aside>
+
+                    <!--
+                        DESTINO DEL FORMULARIO
+                        Igual que en contacto.html: los mensajes se envían a la dirección del "action" (FormSubmit).
+                    -->
+                    <form id="contactoForm" class="contacto-form" action="https://formsubmit.co/hola@lademoswinglab.es" method="POST">
+                        <input type="hidden" name="_subject" value="Contacto Web">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://lademoswinglab.es/alquiler-salas.html?enviado=1#reserva">
+                        <input type="text" name="_honey" class="contacto-honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+                        <input type="hidden" name="motivo" value="Alquiler de salas">
+
+                        <fieldset class="contacto-field">
+                            <legend>¿Qué actividad quieres hacer?</legend>
+                            <div class="contacto-chips">
+                                <label class="contacto-chip"><input type="radio" name="actividad" value="Clases" checked><span>Clases</span></label>
+                                <label class="contacto-chip"><input type="radio" name="actividad" value="Ensayos"><span>Ensayos</span></label>
+                                <label class="contacto-chip"><input type="radio" name="actividad" value="Producción"><span>Producción</span></label>
+                                <label class="contacto-chip"><input type="radio" name="actividad" value="Evento de baile"><span>Evento de baile</span></label>
+                                <label class="contacto-chip"><input type="radio" name="actividad" value="Otra"><span>Otra</span></label>
+                            </div>
+                        </fieldset>
+
+                        <div class="contacto-field">
+                            <label for="nombre">Nombre *</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre" required autocomplete="name">
+                        </div>
+                        <div class="contacto-grid">
+                            <div class="contacto-field">
+                                <label for="email">Email *</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="tu@email.com" required autocomplete="email">
+                            </div>
+                            <div class="contacto-field">
+                                <label for="telefono">Teléfono</label>
+                                <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Opcional" autocomplete="tel">
+                            </div>
+                        </div>
+                        <div class="contacto-grid">
+                            <div class="contacto-field">
+                                <label for="fechas">Días y horario</label>
+                                <input type="text" class="form-control" id="fechas" name="fechas" placeholder="Ej. martes de 18:00 a 20:00">
+                            </div>
+                            <div class="contacto-field">
+                                <label for="personas">Nº de personas</label>
+                                <input type="number" class="form-control" id="personas" name="personas" min="1" placeholder="Aprox.">
+                            </div>
+                        </div>
+                        <div class="contacto-field">
+                            <label for="mensaje">Mensaje *</label>
+                            <textarea class="form-control" id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos tu proyecto" required></textarea>
+                        </div>
+
+                        <div class="contacto-footer">
+                            <label class="contacto-check" for="privacidad">
+                                <input type="checkbox" id="privacidad" name="privacidad" value="Aceptada" required>
+                                <span>He leído y acepto la <a href="politica-de-privacidad.html" target="_blank">política de privacidad</a> *</span>
+                            </label>
+                            <button type="submit" class="contacto-submit">Enviar <i class="bi bi-arrow-right" aria-hidden="true"></i></button>
+                        </div>
+                        <div id="contactoStatus" class="contacto-status" role="status" aria-live="polite"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
 
         <!-- Footer-->
         <footer class="container-fluid bg-light py-5" id="footer">
@@ -122,54 +347,50 @@
                 <div class="col-12 col-md-6 col-lg-6 text-black py-3">
                     <a class="navbar-brand" href="index.html"><img src="assets/logo/logo_black.png" height="40px" alt="logo de la demo swing lab"></a>
                     <hr class="divider bg-black opacity-25"/>
-                    <p>La Demo Swing Lab,<br><a href="https://goo.gl/maps/6hA5MYiVd1mHRQhS9" target="_blank">C/Magdalena 7  - Madrid</a></p>
+                    <p>La Demo Swing Lab,<br><a href="https://goo.gl/maps/6hA5MYiVd1mHRQhS9" target="_blank">C/Magdalena 7 Bajo - Madrid</a></p>
                     <p>Email: <a href="mailto:hola@lademoswinglab.es">hola@lademoswinglab.es</a></p>
                     <p>Whatsapp: <a href="https://wa.me/+34660942608" target="_blank">660 94 26 08</a></p>
                 </div>
-                <div class="rrsscol col-12 col-md-6 col-lg-6 d-flex text-black py-3">
+                <div class="rrsscol col-12 col-md-6 col-lg-6 d-flex text-black py-3 ">
                     <a href="https://www.facebook.com/lademoswinglab" target="_blank" class="rrss"><img src="assets/img/facebook-logo.png" alt="la demo swing lab facebook"></a>
                     <a href="https://www.instagram.com/lademoswinglab/" target="_blank" class="rrss"><img src="assets/img/instagram-logo.png" alt="la demo swing lab instagram"></a>
                     <a href="https://www.youtube.com/channel/UC_rqOJwJNp4n2-XRR5OZlFg" class="rrss" target="_blank"><img src="assets/img/youtube-logo.png" alt="la demo swing lab youtube"></a>
                 </div>
-                
+               
+
             </div>
+
         </footer>
+             <div class="legal-footer bg-light">
+                    <a class="" href="https://lademoswinglab.es/normativa.html" target="_blank">Normativa</a>
+                    <a class="" href="https://lademoswinglab.es/aviso-legal.html" target="_blank">Aviso legal</a>
+                    <a class="" href="https://lademoswinglab.es/politica-de-privacidad.html" target="_blank">Política de privacidad</a>
+                    <a class="" href="https://lademoswinglab.es/politica-de-cookies.html" target="_blank">Política de cookies</a>    
+            </div>
+            
+
+
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- SimpleLightbox plugin JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
-        <!-- fontawesome icon-->
-        <script src="https://kit.fontawesome.com/da603d3063.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script src="js/banner_cookies.js"></script>
+        <script src="js/contacto.js"></script>
         <script>
-            // Slider de salas: las flechas desplazan una tarjeta
-            (function () {
-                const slider = document.getElementById('salasSlider');
-                const arrows = document.querySelectorAll('.salas-arrow');
-                const step = () => {
-                    const card = slider.querySelector('.sala-card');
-                    return card.offsetWidth + parseFloat(getComputedStyle(slider).columnGap || 0);
-                };
-                const update = () => {
-                    const max = slider.scrollWidth - slider.clientWidth - 1;
-                    arrows[0].disabled = slider.scrollLeft <= 0;
-                    arrows[1].disabled = slider.scrollLeft >= max;
-                };
-                arrows.forEach(btn => btn.addEventListener('click', () => {
-                    slider.scrollBy({ left: step() * Number(btn.dataset.dir), behavior: 'smooth' });
-                }));
-                slider.addEventListener('scroll', update, { passive: true });
-                window.addEventListener('resize', update);
-                update();
-            })();
+            if (typeof SimpleLightbox !== 'undefined') {
+                new SimpleLightbox({ elements: '.salas-galeria a' });
+            }
         </script>
+
+        <!-- fontawesome icon-->
+        <script src="https://kit.fontawesome.com/da603d3063.js"></script>
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-
-        
     </body>
 </html>
+
