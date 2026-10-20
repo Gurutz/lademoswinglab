@@ -454,6 +454,11 @@
     margin-bottom: 1rem;
 }
 
+/* Fondos alternos para diferenciar secciones */
+.bg-gris {
+    background-color: #1c1c1c;
+}
+
 /* ¿Qué bailamos? */
 .baile {
     display: grid;
@@ -507,6 +512,7 @@
 
 .escuela-equipo .escuela-title {
     color: #000;
+    text-align: center;
 }
 
 .equipo-grid {
@@ -514,6 +520,7 @@
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 2rem;
     max-width: 960px;
+    margin: 0 auto;
 }
 
 .profe img {
@@ -539,6 +546,7 @@
 }
 
 .profe h3 {
+    text-align: center;
     font-family: 'kaftan_serif_-_trialregular', Arial, sans-serif;
     font-size: 1.2rem;
     color: #000;
@@ -568,7 +576,7 @@
     color: #fff;
     transform: translateY(-4px);
     border-color: #D4C5FF;
-    background-color: #141414;
+    background-color: #1c1c1c;
 }
 
 .info-card > i {
@@ -621,7 +629,15 @@
 /* Contacto en la portada */
 .contacto-home {
     padding-top: 6rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+/* En fondo gris, la tarjeta del formulario va en negro para que destaque */
+.contacto-home .contacto-form {
+    background-color: #000;
+}
+
+.contacto-home .contacto-form .form-control {
+    background-color: #1a1a1a;
 }
 
 /* Horarios y tarifas: espacio bajo el menú fijo */
