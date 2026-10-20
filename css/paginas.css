@@ -11,13 +11,9 @@
 
 /* ---------- Títulos con acento (#EBFFAA) ---------- */
 
-/* Palabra destacada con efecto rotulador */
+/* Palabra destacada: en fondo oscuro, solo color */
 .acento {
-    color: #000;
-    background: linear-gradient(transparent 12%, #EBFFAA 12%, #EBFFAA 94%, transparent 94%);
-    padding: 0 0.15em;
-    -webkit-box-decoration-break: clone;
-    box-decoration-break: clone;
+    color: #EBFFAA;
 }
 
 /* Línea ondulada bajo el título */
@@ -30,14 +26,21 @@
     background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='14' viewBox='0 0 36 14'%3E%3Cpath d='M0 7 Q9 0 18 7 T36 7' fill='none' stroke='%23EBFFAA' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E") repeat-x left center;
 }
 
-/* Sobre fondo claro (equipo): texto y onda en negro */
-.escuela-equipo .acento {
+/* Sobre fondo claro: efecto rotulador, texto y onda en negro */
+.seccion-clara .acento {
+    color: #000;
     background: linear-gradient(transparent 55%, #EBFFAA 55%, #EBFFAA 92%, transparent 92%);
+    padding: 0 0.15em;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
 }
 
 .escuela-equipo .titulo-acento::after {
     margin-left: auto;
     margin-right: auto;
+}
+
+.seccion-clara .titulo-acento::after {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='14' viewBox='0 0 36 14'%3E%3Cpath d='M0 7 Q9 0 18 7 T36 7' fill='none' stroke='%23000000' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E");
 }
 
@@ -514,23 +517,27 @@
 }
 
 .valor {
-    background-color: #0e0e0e;
-    border: 1px solid rgba(255, 255, 255, 0.14);
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
     border-radius: 1.25rem;
     padding: 2rem 1.75rem;
-    transition: border-color 0.25s ease;
+    box-shadow: 0 0.75rem 2rem rgba(80, 60, 160, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .valor:hover {
-    border-color: #D4C5FF;
+    transform: translateY(-4px);
+    box-shadow: 0 1rem 2.5rem rgba(80, 60, 160, 0.14);
 }
 
 .valor-num {
-    display: block;
+    display: inline-block;
     font-family: 'kaftan_serif_-_trialregular', Arial, sans-serif;
     font-size: 2.5rem;
     line-height: 1;
-    color: #EBFFAA;
+    color: #000;
+    background: linear-gradient(transparent 55%, #EBFFAA 55%, #EBFFAA 92%, transparent 92%);
+    padding: 0 0.1em;
     margin-bottom: 1.5rem;
 }
 
@@ -538,7 +545,7 @@
     font-family: 'kaftan_serif_-_trialregular', Arial, sans-serif;
     font-size: 1.6rem;
     line-height: 1.15;
-    color: #fff;
+    color: #000;
     margin-bottom: 0.9rem;
 }
 
@@ -546,7 +553,7 @@
     font-family: 'Manrope', sans-serif;
     font-size: 0.95rem;
     line-height: 1.65;
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(0, 0, 0, 0.7) !important;
     margin: 0;
 }
 
@@ -595,15 +602,22 @@
 
 /* Conoce a nuestro equipo */
 .escuela-equipo {
-    background-color: #EEE9FF;
-    color: #000;
     padding-top: 6rem;
     padding-bottom: 6rem;
 }
 
 .escuela-equipo .escuela-title {
-    color: #000;
     text-align: center;
+}
+
+/* Fondo lila claro (Lo que nos mueve y Equipo) */
+.seccion-clara {
+    background-color: #EEE9FF;
+    color: #000;
+}
+
+.seccion-clara .escuela-title {
+    color: #000;
 }
 
 .equipo-grid {
