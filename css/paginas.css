@@ -441,19 +441,6 @@
     margin-bottom: 3.5rem;
 }
 
-.escuela-tag {
-    display: inline-block;
-    font-family: 'Manrope', sans-serif;
-    font-size: 0.78rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: #000;
-    background-color: #D4C5FF;
-    border-radius: 2rem;
-    padding: 0.35rem 0.9rem;
-    margin-bottom: 1rem;
-}
-
 /* Fondos alternos para diferenciar secciones */
 .bg-gris {
     background-color: #1c1c1c;
