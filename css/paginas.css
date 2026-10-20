@@ -424,6 +424,7 @@
 /* ---------- Portada (La escuela) ---------- */
 
 /* Compensar el menú fijo al saltar a una sección */
+#quienes-somos,
 #services,
 #us,
 #about,
@@ -444,6 +445,32 @@
 /* Fondos alternos para diferenciar secciones */
 .bg-gris {
     background-color: #1c1c1c;
+}
+
+/* ¿Quiénes somos? */
+.quienes {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: 4rem;
+    align-items: start;
+}
+
+.quienes h1 {
+    margin: 0;
+}
+
+.quienes-text p {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.quienes-text .quienes-lead {
+    font-size: 1.45rem;
+    line-height: 1.5;
+    color: #fff;
+    margin-bottom: 1.75rem;
 }
 
 /* ¿Qué bailamos? */
@@ -644,6 +671,11 @@
 }
 
 @media (max-width: 991px) {
+    .quienes {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
     .baile,
     .baile-reverse {
         grid-template-columns: 1fr;
