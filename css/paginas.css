@@ -425,6 +425,7 @@
 
 /* Compensar el menú fijo al saltar a una sección */
 #quienes-somos,
+#lo-que-nos-mueve,
 #services,
 #us,
 #about,
@@ -471,6 +472,50 @@
     line-height: 1.5;
     color: #fff;
     margin-bottom: 1.75rem;
+}
+
+/* Lo que nos mueve */
+.valores-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.valor {
+    background-color: #0e0e0e;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 1.25rem;
+    padding: 2rem 1.75rem;
+    transition: border-color 0.25s ease;
+}
+
+.valor:hover {
+    border-color: #D4C5FF;
+}
+
+.valor-num {
+    display: block;
+    font-family: 'kaftan_serif_-_trialregular', Arial, sans-serif;
+    font-size: 2.5rem;
+    line-height: 1;
+    color: #D4C5FF;
+    margin-bottom: 1.5rem;
+}
+
+.valor h2 {
+    font-family: 'kaftan_serif_-_trialregular', Arial, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.15;
+    color: #fff;
+    margin-bottom: 0.9rem;
+}
+
+.valor p {
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.65;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0;
 }
 
 /* ¿Qué bailamos? */
@@ -665,7 +710,8 @@
 }
 
 @media (max-width: 1199px) {
-    .eventos-grid {
+    .eventos-grid,
+    .valores-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
@@ -703,7 +749,8 @@
 }
 
 @media (max-width: 600px) {
-    .eventos-grid {
+    .eventos-grid,
+    .valores-grid {
         grid-template-columns: 1fr;
     }
 
