@@ -56,32 +56,37 @@ const generarHtml =()=>{
     /* const datosEventos = require("./eventos.json");*/
     datosEventos.forEach((evento)=>{
         const article = document.createElement("article")
-        article.classList.add("evento-card");
+        article.classList.add("events-row");
         const link = evento.link ? `
-            <a target="_blank" class="evento-btn evento-btn-primary" href="${evento.link}">Apúntate</a>
+            <span>
+                <a target="_blank" class="sign-button" href="${evento.link}">Apúntate</a>
+            </span>
             ` : "";
-
+        
         const linkExtra = evento.linkExtra ? `
-            <a target="_blank" class="evento-btn" href="${evento.linkExtra}">Horario</a>
+            <span>
+                <a target="_blank" class="sign-button" href="${evento.linkExtra}">Horario</a>
+            </span>
             ` : "";
-
-        const botones = link || linkExtra ? `<div class="evento-actions">${link}${linkExtra}</div>` : "";
 
         const eventoHtml = `
-            <div class="evento-img">
-                <img src="${evento.img}" alt="${evento.titulo}" loading="lazy">
+            <div class="image">
+                <img src="${evento.img}" alt="">
             </div>
-            <div class="evento-body">
-                <p class="evento-fecha"><i class="bi bi-calendar-event" aria-hidden="true"></i> ${evento.fecha}</p>
+            <div class="text">
                 <h2>${evento.titulo}</h2>
-                ${botones}
+                <div class="divider"></div>
+                <p>${evento.fecha}</p>
+                <p>${link}${linkExtra}</p>
+            
             </div>
+            
         `;
         article.innerHTML=eventoHtml;
         containerEventos.appendChild(article);
 
     });
-
+    
 }
 
     /* fetch('./eventos.json') // Cargar el archivo JSON
